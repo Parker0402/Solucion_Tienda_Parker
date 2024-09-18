@@ -29,9 +29,10 @@ namespace Tienda_Parker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPrincipal));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btnInicio = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -46,6 +47,15 @@ namespace Tienda_Parker
             this.panelControl1.Size = new System.Drawing.Size(129, 450);
             this.panelControl1.TabIndex = 0;
             // 
+            // btnInicio
+            // 
+            this.btnInicio.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.ImageOptions.Image")));
+            this.btnInicio.Location = new System.Drawing.Point(0, 0);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(129, 66);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "Inicio";
+            // 
             // panelControl2
             // 
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -53,14 +63,6 @@ namespace Tienda_Parker
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(671, 66);
             this.panelControl2.TabIndex = 1;
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.Location = new System.Drawing.Point(0, 0);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(135, 66);
-            this.btnInicio.TabIndex = 0;
-            this.btnInicio.Text = "Inicio";
             // 
             // formPrincipal
             // 
