@@ -85,7 +85,7 @@ namespace Tienda_Parker
             // 
             // xpCollectionUsuario
             // 
-            this.xpCollectionUsuario.ObjectType = typeof(Tienda_Parker.tienda.Usuarios);
+            this.xpCollectionUsuario.ObjectType = typeof(Tienda_Parker.Database.Usuarios);
             this.xpCollectionUsuario.Session = this.Tienda;
             // 
             // formLogin

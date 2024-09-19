@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tienda_Parker.tienda;
+using Tienda_Parker.Database;
 
 namespace Tienda_Parker
 {

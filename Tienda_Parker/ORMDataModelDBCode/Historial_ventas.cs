@@ -5,12 +5,12 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
-namespace Tienda_Parker.tienda
+namespace Tienda_Parker.Database
 {
 
-    public partial class Facturas
+    public partial class Historial_ventas
     {
-        public Facturas(Session session) : base(session) { }
+        public Historial_ventas(Session session) : base(session) { }
         public override void AfterConstruction() { base.AfterConstruction(); }
     }
 

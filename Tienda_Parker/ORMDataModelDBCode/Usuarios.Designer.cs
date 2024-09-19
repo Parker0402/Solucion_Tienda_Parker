@@ -13,7 +13,7 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
-namespace Tienda_Parker.tienda
+namespace Tienda_Parker.Database
 {
 
     [Persistent(@"usuarios")]
@@ -42,6 +42,14 @@ namespace Tienda_Parker.tienda
         {
             get { return fContrasena; }
             set { SetPropertyValue<string>(nameof(Contrasena), ref fContrasena, value); }
+        }
+        string fRoles;
+        [Size(20)]
+        [Persistent(@"roles")]
+        public string Roles
+        {
+            get { return fRoles; }
+            set { SetPropertyValue<string>(nameof(Roles), ref fRoles, value); }
         }
         [Association(@"EmpleadosReferencesUsuarios")]
         public XPCollection<Empleados> EmpleadosCollection { get { return GetCollection<Empleados>(nameof(EmpleadosCollection)); } }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Tienda_Parker
 {
-    public partial class formUsuario : Form
+    public partial class formProveedores : Form
     {
-        public formUsuario()
+        public formProveedores()
         {
             InitializeComponent();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

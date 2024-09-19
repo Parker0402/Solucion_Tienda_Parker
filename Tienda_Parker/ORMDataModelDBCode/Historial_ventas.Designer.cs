@@ -13,11 +13,11 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reflection;
-namespace Tienda_Parker.tienda
+namespace Tienda_Parker.Database
 {
 
-    [Persistent(@"facturas")]
-    public partial class Facturas : XPLiteObject
+    [Persistent(@"historial_ventas")]
+    public partial class Historial_ventas : XPLiteObject
     {
         int fId;
         [Key(true)]
@@ -27,9 +27,17 @@ namespace Tienda_Parker.tienda
             get { return fId; }
             set { SetPropertyValue<int>(nameof(Id), ref fId, value); }
         }
+        Facturas fFactura_id;
+        [Persistent(@"factura_id")]
+        [Association(@"Historial_ventasReferencesFacturas")]
+        public Facturas Factura_id
+        {
+            get { return fFactura_id; }
+            set { SetPropertyValue<Facturas>(nameof(Factura_id), ref fFactura_id, value); }
+        }
         Usuarios fUsuario_id;
         [Persistent(@"usuario_id")]
-        [Association(@"FacturasReferencesUsuarios")]
+        [Association(@"Historial_ventasReferencesUsuarios")]
         public Usuarios Usuario_id
         {
             get { return fUsuario_id; }
@@ -42,10 +50,6 @@ namespace Tienda_Parker.tienda
             get { return fTotal; }
             set { SetPropertyValue<decimal>(nameof(Total), ref fTotal, value); }
         }
-        [Association(@"Detalle_facturasReferencesFacturas")]
-        public XPCollection<Detalle_facturas> Detalle_facturass { get { return GetCollection<Detalle_facturas>(nameof(Detalle_facturass)); } }
-        [Association(@"Historial_ventasReferencesFacturas")]
-        public XPCollection<Historial_ventas> Historial_ventass { get { return GetCollection<Historial_ventas>(nameof(Historial_ventass)); } }
     }
 
 }

@@ -205,7 +205,7 @@
             // 
             // xpCollectionUsuarios
             // 
-            this.xpCollectionUsuarios.ObjectType = typeof(Tienda_Parker.tienda.Usuarios);
+            this.xpCollectionUsuarios.ObjectType = typeof(Tienda_Parker.Database.Usuarios);
             this.xpCollectionUsuarios.Session = this.unitOfWork1;
             // 
             // searchLookUpEdit1View
@@ -313,7 +313,7 @@
             // 
             // xpCollectionEmpleado
             // 
-            this.xpCollectionEmpleado.ObjectType = typeof(Tienda_Parker.tienda.Empleados);
+            this.xpCollectionEmpleado.ObjectType = typeof(Tienda_Parker.Database.Empleados);
             this.xpCollectionEmpleado.Session = this.unitOfWork1;
             // 
             // gridViewEmpleado

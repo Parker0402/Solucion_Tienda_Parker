@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tienda_Parker.tienda;
+using Tienda_Parker.Database;
 
 namespace Tienda_Parker
 {
@@ -22,7 +22,7 @@ namespace Tienda_Parker
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formEmpleado());
+            Application.Run(new formUsuarios());
         }
     }
 }
