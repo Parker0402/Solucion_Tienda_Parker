@@ -90,41 +90,37 @@
     <Compile Include="formUsuario.Designer.cs">
       <DependentUpon>formUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\ConnectionHelper.cs" />
-    <Compile Include="ORMDataModel1Code\Detalle_facturas.cs" />
-    <Compile Include="ORMDataModel1Code\Detalle_facturas.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\ConnectionHelper.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Detalle_facturas.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Detalle_facturas.Designer.cs">
       <DependentUpon>Detalle_facturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Empleados.cs" />
-    <Compile Include="ORMDataModel1Code\Empleados.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Empleados.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Empleados.Designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Entradas_inventario.cs" />
-    <Compile Include="ORMDataModel1Code\Entradas_inventario.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Entradas_inventario.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Entradas_inventario.Designer.cs">
       <DependentUpon>Entradas_inventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Facturas.cs" />
-    <Compile Include="ORMDataModel1Code\Facturas.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Facturas.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Facturas.Designer.cs">
       <DependentUpon>Facturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Historial_ventas.cs" />
-    <Compile Include="ORMDataModel1Code\Historial_ventas.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Historial_ventas.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Historial_ventas.Designer.cs">
       <DependentUpon>Historial_ventas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Productos.cs" />
-    <Compile Include="ORMDataModel1Code\Productos.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Productos.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Productos.Designer.cs">
       <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Proveedores.cs" />
-    <Compile Include="ORMDataModel1Code\Proveedores.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Proveedores.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORMDataModel1Code\Roles.cs" />
-    <Compile Include="ORMDataModel1Code\Roles.Designer.cs">
-      <DependentUpon>Roles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ORMDataModel1Code\Usuarios.cs" />
-    <Compile Include="ORMDataModel1Code\Usuarios.Designer.cs">
+    <Compile Include="ORMDataModelTiendaCode\Usuarios.cs" />
+    <Compile Include="ORMDataModelTiendaCode\Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -145,9 +141,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="ORMDataModel1.xpo" />
-    <None Include="ORMDataModel1.xpo.diagram">
-      <DependentUpon>ORMDataModel1.xpo</DependentUpon>
+    <None Include="ORMDataModelTienda.xpo" />
+    <None Include="ORMDataModelTienda.xpo.diagram">
+      <DependentUpon>ORMDataModelTienda.xpo</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

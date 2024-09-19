@@ -25,7 +25,6 @@ namespace Tienda_Parker.tienda
             typeof(Historial_ventas),
             typeof(Productos),
             typeof(Proveedores),
-            typeof(Roles),
             typeof(Usuarios)
         };
         public static Type[] GetPersistentTypes()

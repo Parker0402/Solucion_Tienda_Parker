@@ -43,14 +43,6 @@ namespace Tienda_Parker.tienda
             get { return fContrasena; }
             set { SetPropertyValue<string>(nameof(Contrasena), ref fContrasena, value); }
         }
-        Roles fRol_id;
-        [Persistent(@"rol_id")]
-        [Association(@"UsuariosReferencesRoles")]
-        public Roles Rol_id
-        {
-            get { return fRol_id; }
-            set { SetPropertyValue<Roles>(nameof(Rol_id), ref fRol_id, value); }
-        }
         [Association(@"EmpleadosReferencesUsuarios")]
         public XPCollection<Empleados> EmpleadosCollection { get { return GetCollection<Empleados>(nameof(EmpleadosCollection)); } }
         [Association(@"FacturasReferencesUsuarios")]
