@@ -69,6 +69,12 @@
     <Compile Include="formEmpleado.Designer.cs">
       <DependentUpon>formEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="formEntradas_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEntradas_Inventario.Designer.cs">
+      <DependentUpon>formEntradas_Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,11 +137,17 @@
     <EmbeddedResource Include="formEmpleado.resx">
       <DependentUpon>formEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formEntradas_Inventario.resx">
+      <DependentUpon>formEntradas_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formPrincipal.resx">
       <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formProducto.resx">
+      <DependentUpon>formProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

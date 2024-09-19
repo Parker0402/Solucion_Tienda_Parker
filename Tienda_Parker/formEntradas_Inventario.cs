@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Tienda_Parker
 {
-    public partial class formProducto : Form
+    public partial class formEntradas_Inventario : Form
     {
-        public formProducto()
+        public formEntradas_Inventario()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
