@@ -96,26 +96,29 @@
             this.btnEliminar.Size = new System.Drawing.Size(78, 36);
             this.btnEliminar.TabIndex = 43;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.AutoSize = true;
             this.btnCancelar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.ImageOptions.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(101, 279);
+            this.btnCancelar.Location = new System.Drawing.Point(48, 357);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(84, 36);
             this.btnCancelar.TabIndex = 42;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnActualizar
             // 
             this.btnActualizar.AutoSize = true;
             this.btnActualizar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.ImageOptions.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(45, 339);
+            this.btnActualizar.Location = new System.Drawing.Point(104, 279);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(89, 36);
             this.btnActualizar.TabIndex = 41;
             this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
@@ -126,6 +129,7 @@
             this.btnNuevo.Size = new System.Drawing.Size(73, 36);
             this.btnNuevo.TabIndex = 40;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label1
             // 
@@ -206,6 +210,8 @@
             this.colRoles});
             this.gridViewUser.GridControl = this.gridControl1;
             this.gridViewUser.Name = "gridViewUser";
+            this.gridViewUser.OptionsBehavior.Editable = false;
+            this.gridViewUser.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewUser_RowClick);
             // 
             // colId
             // 
@@ -243,6 +249,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "formUsuarios";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.formUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
