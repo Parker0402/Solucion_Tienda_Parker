@@ -29,8 +29,10 @@ namespace Tienda_Parker
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPrincipal));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnInventario = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -38,10 +40,13 @@ namespace Tienda_Parker
             this.btnUsuarios = new DevExpress.XtraEditors.SimpleButton();
             this.btnInicio = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.btnInventario = new DevExpress.XtraEditors.SimpleButton();
+            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -59,6 +64,18 @@ namespace Tienda_Parker
             this.panelControl1.Size = new System.Drawing.Size(129, 639);
             this.panelControl1.TabIndex = 0;
             // 
+            // btnInventario
+            // 
+            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInventario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInventario.ImageOptions.Image")));
+            this.btnInventario.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnInventario.Location = new System.Drawing.Point(2, 398);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(125, 66);
+            this.btnInventario.TabIndex = 5;
+            this.btnInventario.Text = "Ingreso de Productos";
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
+            // 
             // simpleButton3
             // 
             this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -69,6 +86,7 @@ namespace Tienda_Parker
             this.simpleButton3.Size = new System.Drawing.Size(125, 66);
             this.simpleButton3.TabIndex = 4;
             this.simpleButton3.Text = "Gestion de Facturas";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton2
             // 
@@ -80,6 +98,7 @@ namespace Tienda_Parker
             this.simpleButton2.Size = new System.Drawing.Size(125, 66);
             this.simpleButton2.TabIndex = 3;
             this.simpleButton2.Text = "Gestion de Proveedores";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -90,7 +109,8 @@ namespace Tienda_Parker
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(125, 66);
             this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Gestion de Productos";
+            this.simpleButton1.Text = "Inventario";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnEmpleados
             // 
@@ -102,6 +122,7 @@ namespace Tienda_Parker
             this.btnEmpleados.Size = new System.Drawing.Size(125, 66);
             this.btnEmpleados.TabIndex = 1;
             this.btnEmpleados.Text = "Gestion de Empleados";
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // btnUsuarios
             // 
@@ -113,6 +134,7 @@ namespace Tienda_Parker
             this.btnUsuarios.Size = new System.Drawing.Size(125, 66);
             this.btnUsuarios.TabIndex = 0;
             this.btnUsuarios.Text = "Gestion de Usuarios";
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnInicio
             // 
@@ -133,16 +155,12 @@ namespace Tienda_Parker
             this.panelControl2.Size = new System.Drawing.Size(671, 66);
             this.panelControl2.TabIndex = 1;
             // 
-            // btnInventario
+            // documentManager1
             // 
-            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.btnInventario.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnInventario.Location = new System.Drawing.Point(2, 398);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(125, 66);
-            this.btnInventario.TabIndex = 5;
-            this.btnInventario.Text = "Inventario";
+            this.documentManager1.MdiParent = this;
+            this.documentManager1.View = this.tabbedView1;
+            this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
+            this.tabbedView1});
             // 
             // formPrincipal
             // 
@@ -152,11 +170,15 @@ namespace Tienda_Parker
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
             this.Name = "formPrincipal";
             this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,5 +194,7 @@ namespace Tienda_Parker
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton btnEmpleados;
         private DevExpress.XtraEditors.SimpleButton btnInventario;
+        private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
+        private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
     }
 }

@@ -221,5 +221,10 @@ namespace Tienda_Parker
 
             }
         }
+
+        private void formProveedores_Load(object sender, EventArgs e)
+        {
+            Habilitar(true, false, false, false, false, false);
+        }
     }
 }

@@ -312,6 +312,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "formProveedores";
             this.Text = "formProveedores";
+            this.Load += new System.EventHandler(this.formProveedores_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

@@ -22,7 +22,7 @@ namespace Tienda_Parker
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formProveedores());
+            Application.Run(new formLogin());
         }
     }
 }
