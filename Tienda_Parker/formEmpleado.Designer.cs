@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formEmpleado));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -43,17 +44,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.slueUsuario = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.xpCollectionUsuarios = new DevExpress.Xpo.XPCollection(this.components);
             this.unitOfWork1 = new DevExpress.Xpo.UnitOfWork(this.components);
-            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.searchLookUpEditUsuarioView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEliminar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnActualizar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             this.gridControlEmpleado = new DevExpress.XtraGrid.GridControl();
             this.xpCollectionEmpleado = new DevExpress.Xpo.XPCollection(this.components);
             this.gridViewEmpleado = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -67,10 +68,10 @@
             this.colSalario = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slueUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditUsuarioView)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEmpleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionEmpleado)).BeginInit();
@@ -130,7 +131,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Location = new System.Drawing.Point(12, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 7;
@@ -190,30 +191,30 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Ingreso";
             // 
-            // searchLookUpEdit1
+            // slueUsuario
             // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(88, 320);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slueUsuario.Location = new System.Drawing.Point(88, 320);
+            this.slueUsuario.Name = "slueUsuario";
+            this.slueUsuario.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.DataSource = this.xpCollectionUsuarios;
-            this.searchLookUpEdit1.Properties.DisplayMember = "Usuario";
-            this.searchLookUpEdit1.Properties.PopupView = this.searchLookUpEdit1View;
-            this.searchLookUpEdit1.Properties.ValueMember = "Id";
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(100, 20);
-            this.searchLookUpEdit1.TabIndex = 14;
+            this.slueUsuario.Properties.DataSource = this.xpCollectionUsuarios;
+            this.slueUsuario.Properties.DisplayMember = "Usuario";
+            this.slueUsuario.Properties.PopupView = this.searchLookUpEditUsuarioView;
+            this.slueUsuario.Properties.ValueMember = "Id";
+            this.slueUsuario.Size = new System.Drawing.Size(100, 20);
+            this.slueUsuario.TabIndex = 14;
             // 
             // xpCollectionUsuarios
             // 
             this.xpCollectionUsuarios.ObjectType = typeof(Tienda_Parker.Database.Usuarios);
             this.xpCollectionUsuarios.Session = this.unitOfWork1;
             // 
-            // searchLookUpEdit1View
+            // searchLookUpEditUsuarioView
             // 
-            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
-            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            this.searchLookUpEditUsuarioView.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.searchLookUpEditUsuarioView.Name = "searchLookUpEditUsuarioView";
+            this.searchLookUpEditUsuarioView.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.searchLookUpEditUsuarioView.OptionsView.ShowGroupPanel = false;
             // 
             // label8
             // 
@@ -226,15 +227,15 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnGuardar);
+            this.panel1.Controls.Add(this.btnEliminar);
+            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Controls.Add(this.btnActualizar);
+            this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.txtCorreo);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.searchLookUpEdit1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.slueUsuario);
             this.panel1.Controls.Add(this.txtDireccion);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtTelefono);
@@ -250,54 +251,63 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 489);
+            this.panel1.Size = new System.Drawing.Size(200, 621);
             this.panel1.TabIndex = 16;
             // 
-            // button5
+            // btnGuardar
             // 
-            this.button5.Location = new System.Drawing.Point(15, 393);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "Cancelar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnGuardar.AutoSize = true;
+            this.btnGuardar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.ImageOptions.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(105, 381);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(81, 36);
+            this.btnGuardar.TabIndex = 49;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // button4
+            // btnEliminar
             // 
-            this.button4.Location = new System.Drawing.Point(102, 393);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnEliminar.AutoSize = true;
+            this.btnEliminar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.ImageOptions.Image")));
+            this.btnEliminar.Location = new System.Drawing.Point(13, 444);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(78, 36);
+            this.btnEliminar.TabIndex = 48;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button3
+            // btnCancelar
             // 
-            this.button3.Location = new System.Drawing.Point(56, 434);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 32);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCancelar.AutoSize = true;
+            this.btnCancelar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.ImageOptions.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(49, 516);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(84, 36);
+            this.btnCancelar.TabIndex = 47;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // button2
+            // btnActualizar
             // 
-            this.button2.Location = new System.Drawing.Point(102, 355);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnActualizar.AutoSize = true;
+            this.btnActualizar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.ImageOptions.Image")));
+            this.btnActualizar.Location = new System.Drawing.Point(105, 444);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(89, 36);
+            this.btnActualizar.TabIndex = 46;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // button1
+            // btnNuevo
             // 
-            this.button1.Location = new System.Drawing.Point(15, 355);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Nuevo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNuevo.AutoSize = true;
+            this.btnNuevo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.ImageOptions.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(13, 381);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(73, 36);
+            this.btnNuevo.TabIndex = 45;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // gridControlEmpleado
             // 
@@ -306,7 +316,7 @@
             this.gridControlEmpleado.Location = new System.Drawing.Point(200, 0);
             this.gridControlEmpleado.MainView = this.gridViewEmpleado;
             this.gridControlEmpleado.Name = "gridControlEmpleado";
-            this.gridControlEmpleado.Size = new System.Drawing.Size(1032, 489);
+            this.gridControlEmpleado.Size = new System.Drawing.Size(1032, 621);
             this.gridControlEmpleado.TabIndex = 17;
             this.gridControlEmpleado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewEmpleado});
@@ -331,90 +341,90 @@
             this.gridColumn2});
             this.gridViewEmpleado.GridControl = this.gridControlEmpleado;
             this.gridViewEmpleado.Name = "gridViewEmpleado";
+            this.gridViewEmpleado.OptionsBehavior.Editable = false;
+            this.gridViewEmpleado.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewEmpleado_RowClick);
             // 
             // colId
             // 
             this.colId.FieldName = "Id";
             this.colId.Name = "colId";
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 0;
             // 
             // colNombre
             // 
             this.colNombre.FieldName = "Nombre";
             this.colNombre.Name = "colNombre";
             this.colNombre.Visible = true;
-            this.colNombre.VisibleIndex = 1;
+            this.colNombre.VisibleIndex = 0;
             // 
             // colEmail
             // 
             this.colEmail.FieldName = "Email";
             this.colEmail.Name = "colEmail";
             this.colEmail.Visible = true;
-            this.colEmail.VisibleIndex = 2;
+            this.colEmail.VisibleIndex = 1;
             // 
             // colTelefono
             // 
             this.colTelefono.FieldName = "Telefono";
             this.colTelefono.Name = "colTelefono";
             this.colTelefono.Visible = true;
-            this.colTelefono.VisibleIndex = 3;
+            this.colTelefono.VisibleIndex = 2;
             // 
             // colDireccion
             // 
             this.colDireccion.FieldName = "Direccion";
             this.colDireccion.Name = "colDireccion";
             this.colDireccion.Visible = true;
-            this.colDireccion.VisibleIndex = 4;
+            this.colDireccion.VisibleIndex = 3;
             // 
             // colCargo
             // 
             this.colCargo.FieldName = "Cargo";
             this.colCargo.Name = "colCargo";
             this.colCargo.Visible = true;
-            this.colCargo.VisibleIndex = 5;
+            this.colCargo.VisibleIndex = 4;
             // 
             // colFecha_ingreso
             // 
             this.colFecha_ingreso.FieldName = "Fecha_ingreso";
             this.colFecha_ingreso.Name = "colFecha_ingreso";
             this.colFecha_ingreso.Visible = true;
-            this.colFecha_ingreso.VisibleIndex = 6;
+            this.colFecha_ingreso.VisibleIndex = 5;
             // 
             // colSalario
             // 
             this.colSalario.FieldName = "Salario";
             this.colSalario.Name = "colSalario";
             this.colSalario.Visible = true;
-            this.colSalario.VisibleIndex = 7;
+            this.colSalario.VisibleIndex = 6;
             // 
             // gridColumn1
             // 
             this.gridColumn1.FieldName = "Usuario_id!";
             this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 8;
             // 
             // gridColumn2
             // 
-            this.gridColumn2.FieldName = "Usuario_id!Key";
+            this.gridColumn2.Caption = "Usuario";
+            this.gridColumn2.FieldName = "Usuario_id.Usuario";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 9;
+            this.gridColumn2.VisibleIndex = 7;
             // 
             // formEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 489);
+            this.ClientSize = new System.Drawing.Size(1232, 621);
             this.Controls.Add(this.gridControlEmpleado);
             this.Controls.Add(this.panel1);
             this.Name = "formEmpleado";
             this.Text = "Empleado";
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.formEmpleado_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.slueUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEditUsuarioView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlEmpleado)).EndInit();
@@ -440,8 +450,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
+        private DevExpress.XtraEditors.SearchLookUpEdit slueUsuario;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEditUsuarioView;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraGrid.GridControl gridControlEmpleado;
@@ -459,10 +469,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn colSalario;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.SimpleButton btnGuardar;
+        private DevExpress.XtraEditors.SimpleButton btnEliminar;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private DevExpress.XtraEditors.SimpleButton btnActualizar;
+        private DevExpress.XtraEditors.SimpleButton btnNuevo;
     }
 }

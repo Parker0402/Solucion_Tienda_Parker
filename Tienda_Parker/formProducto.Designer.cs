@@ -272,6 +272,7 @@ namespace Tienda_Parker
             this.Controls.Add(this.panel1);
             this.Name = "formProducto";
             this.Text = "Producto";
+            this.Load += new System.EventHandler(this.formProducto_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

@@ -70,6 +70,7 @@ namespace Tienda_Parker
             // 
             this.txtContrasena.Location = new System.Drawing.Point(128, 103);
             this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Properties.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(100, 20);
             this.txtContrasena.TabIndex = 3;
             // 
@@ -79,7 +80,7 @@ namespace Tienda_Parker
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(100, 23);
             this.btnIniciar.TabIndex = 4;
-            this.btnIniciar.Text = "Iniciar secion";
+            this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 

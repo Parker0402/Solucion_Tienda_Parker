@@ -37,12 +37,17 @@ namespace Tienda_Parker
                     this.Visible = true;
                     txtContrasena.Clear();
                     txtUsuario.Clear();
+                    txtUsuario.Focus();
+
                     usr = true;
                 }
             }
             if (!usr)
             {
-            MessageBox.Show("Usuario o contraseña incorrectos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o contraseña incorrectos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtContrasena.Clear();
+                txtUsuario.Clear();
+                txtUsuario.Focus();
             }
         
         }
