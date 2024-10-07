@@ -82,42 +82,42 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(88, 33);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(148, 20);
             this.txtNombre.TabIndex = 0;
             // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(88, 73);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(100, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(148, 20);
             this.txtCorreo.TabIndex = 1;
             // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(88, 158);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(148, 20);
             this.txtDireccion.TabIndex = 2;
             // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(88, 116);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(148, 20);
             this.txtTelefono.TabIndex = 3;
             // 
             // txtCargo
             // 
             this.txtCargo.Location = new System.Drawing.Point(88, 207);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(100, 20);
+            this.txtCargo.Size = new System.Drawing.Size(148, 20);
             this.txtCargo.TabIndex = 4;
             // 
             // txtSalario
             // 
             this.txtSalario.Location = new System.Drawing.Point(88, 283);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(100, 20);
+            this.txtSalario.Size = new System.Drawing.Size(148, 20);
             this.txtSalario.TabIndex = 5;
             // 
             // dtpIngreso
@@ -125,7 +125,7 @@
             this.dtpIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpIngreso.Location = new System.Drawing.Point(88, 249);
             this.dtpIngreso.Name = "dtpIngreso";
-            this.dtpIngreso.Size = new System.Drawing.Size(100, 20);
+            this.dtpIngreso.Size = new System.Drawing.Size(148, 20);
             this.dtpIngreso.TabIndex = 6;
             // 
             // label1
@@ -199,9 +199,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.slueUsuario.Properties.DataSource = this.xpCollectionUsuarios;
             this.slueUsuario.Properties.DisplayMember = "Usuario";
+            this.slueUsuario.Properties.NullText = "Seleccione un Usuario";
             this.slueUsuario.Properties.PopupView = this.searchLookUpEditUsuarioView;
             this.slueUsuario.Properties.ValueMember = "Id";
-            this.slueUsuario.Size = new System.Drawing.Size(100, 20);
+            this.slueUsuario.Size = new System.Drawing.Size(148, 20);
             this.slueUsuario.TabIndex = 14;
             // 
             // xpCollectionUsuarios
@@ -251,7 +252,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 621);
+            this.panel1.Size = new System.Drawing.Size(260, 621);
             this.panel1.TabIndex = 16;
             // 
             // btnGuardar
@@ -313,10 +314,10 @@
             // 
             this.gridControlEmpleado.DataSource = this.xpCollectionEmpleado;
             this.gridControlEmpleado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlEmpleado.Location = new System.Drawing.Point(200, 0);
+            this.gridControlEmpleado.Location = new System.Drawing.Point(260, 0);
             this.gridControlEmpleado.MainView = this.gridViewEmpleado;
             this.gridControlEmpleado.Name = "gridControlEmpleado";
-            this.gridControlEmpleado.Size = new System.Drawing.Size(1032, 621);
+            this.gridControlEmpleado.Size = new System.Drawing.Size(972, 621);
             this.gridControlEmpleado.TabIndex = 17;
             this.gridControlEmpleado.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewEmpleado});
@@ -342,6 +343,7 @@
             this.gridViewEmpleado.GridControl = this.gridControlEmpleado;
             this.gridViewEmpleado.Name = "gridViewEmpleado";
             this.gridViewEmpleado.OptionsBehavior.Editable = false;
+            this.gridViewEmpleado.OptionsView.ShowDetailButtons = false;
             this.gridViewEmpleado.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewEmpleado_RowClick);
             // 
             // colId
@@ -418,8 +420,11 @@
             this.ClientSize = new System.Drawing.Size(1232, 621);
             this.Controls.Add(this.gridControlEmpleado);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formEmpleado";
             this.Text = "Empleado";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.formEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.slueUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionUsuarios)).EndInit();

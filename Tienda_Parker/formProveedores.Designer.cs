@@ -310,8 +310,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formProveedores";
             this.Text = "formProveedores";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.formProveedores_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

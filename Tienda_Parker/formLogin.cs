@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Security;
 using System.Windows.Forms;
 using Tienda_Parker.Database;
 
@@ -31,7 +32,7 @@ namespace Tienda_Parker
                 if (U.Usuario.Equals(txtUsuario.Text) &&
                 U.Contrasena.Equals(txtContrasena.Text))
                 {
-                    formPrincipal fp = new formPrincipal();
+                    formPrincipal fp = new formPrincipal(U.Roles,U);
                     this.Visible = false;
                     fp.ShowDialog();
                     this.Visible = true;

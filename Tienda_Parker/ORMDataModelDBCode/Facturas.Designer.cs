@@ -42,6 +42,14 @@ namespace Tienda_Parker.Database
             get { return fTotal; }
             set { SetPropertyValue<decimal>(nameof(Total), ref fTotal, value); }
         }
+        string fCliente;
+        [Size(45)]
+        [Persistent(@"cliente")]
+        public string Cliente
+        {
+            get { return fCliente; }
+            set { SetPropertyValue<string>(nameof(Cliente), ref fCliente, value); }
+        }
         [Association(@"Detalle_facturasReferencesFacturas")]
         public XPCollection<Detalle_facturas> Detalle_facturass { get { return GetCollection<Detalle_facturas>(nameof(Detalle_facturass)); } }
         [Association(@"Historial_ventasReferencesFacturas")]
