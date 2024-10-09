@@ -48,12 +48,14 @@ namespace Tienda_Parker
         {
             Limpiar();
             Habilitar(false,true,false,false,true,true);
+            xpCollectionProveedores.Reload();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpiar();
             Habilitar(true, false, false, false, false, false);
+            xpCollectionProveedores.Reload();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

@@ -54,6 +54,7 @@ namespace Tienda_Parker
         {
             Limpiar();
             Habilitar(false, true, false, false, true, true);
+            xpCollectionEmpleado.Reload();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -113,9 +114,9 @@ namespace Tienda_Parker
                 if (confirmacion == DialogResult.Yes)
                 {
                     // Buscar el usuario en la XPCollection de forma manual
-                    Proveedores Eliminar = null;
+                    Empleados Eliminar = null;
 
-                    foreach (Proveedores registro in xpCollectionEmpleado)
+                    foreach (Empleados registro in xpCollectionEmpleado)
                     {
                         if (registro.Id == Seleccionado)
                         {
@@ -159,25 +160,34 @@ namespace Tienda_Parker
             // Verifica si hay una fila seleccionada en el grid
             if (gridViewEmpleado.FocusedRowHandle >= 0)
             {
-
-                int Seleccionado = (int)gridViewEmpleado.GetRowCellValue(gridViewEmpleado.FocusedRowHandle, "Id");
-
-
-                if (string.IsNullOrEmpty(txtNombre.Text) ||
-                string.IsNullOrEmpty(txtCorreo.Text) ||
-                string.IsNullOrEmpty(txtTelefono.Text) ||
-                string.IsNullOrEmpty(txtDireccion.Text) ||
-                string.IsNullOrEmpty(txtCargo.Text) ||
-                string.IsNullOrEmpty(dtpIngreso.Text) ||
-                string.IsNullOrEmpty(txtSalario.Text) ||
-                slueUsuario.EditValue == null)
+                // Obtener el ID del empleado seleccionado
+                int Seleccionado;
+                try
                 {
-                    MessageBox.Show("Campos Requeridos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Seleccionado = (int)gridViewEmpleado.GetRowCellValue(gridViewEmpleado.FocusedRowHandle, "Id");
+                }
+                catch (InvalidCastException ex)
+                {
+                    MessageBox.Show("Error al obtener el ID del empleado seleccionado: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                Empleados Actualizar = null;
+                // Validación de campos vacíos
+                if (string.IsNullOrEmpty(txtNombre.Text) ||
+                    string.IsNullOrEmpty(txtCorreo.Text) ||
+                    string.IsNullOrEmpty(txtTelefono.Text) ||
+                    string.IsNullOrEmpty(txtDireccion.Text) ||
+                    string.IsNullOrEmpty(txtCargo.Text) ||
+                    string.IsNullOrEmpty(dtpIngreso.Text) ||
+                    string.IsNullOrEmpty(txtSalario.Text) ||
+                    slueUsuario.EditValue == null)
+                {
+                    MessageBox.Show("Todos los campos son obligatorios.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
+                // Buscar el empleado seleccionado
+                Empleados Actualizar = null;
                 foreach (Empleados registro in xpCollectionEmpleado)
                 {
                     if (registro.Id == Seleccionado)
@@ -189,45 +199,84 @@ namespace Tienda_Parker
 
                 if (Actualizar != null)
                 {
+                    // Actualizar los valores del empleado
                     Actualizar.Nombre = txtNombre.Text;
                     Actualizar.Email = txtCorreo.Text;
                     Actualizar.Direccion = txtDireccion.Text;
                     Actualizar.Cargo = txtCargo.Text;
                     Actualizar.Telefono = txtTelefono.Text;
-                    Actualizar.Fecha_ingreso = dtpIngreso.Value;
-                    Actualizar.Salario = decimal.Parse(txtSalario.Text);
-                    Actualizar.Usuario_id = unitOfWork1.FindObject<Usuarios>(CriteriaOperator.Parse("Id = ?", (int)slueUsuario.EditValue));
 
-                    Actualizar.Save();
-                    unitOfWork1.CommitChanges();
+                    // Parsear fecha de ingreso de forma segura
+                    if (DateTime.TryParse(dtpIngreso.Text, out DateTime fechaIngreso))
+                    {
+                        Actualizar.Fecha_ingreso = fechaIngreso;
+                    }
+                    else
+                    {
+                        MessageBox.Show("La fecha de ingreso no es válida.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-                    // Mostrar mensaje de éxito
-                    MessageBox.Show("Actualizado con éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Convertir salario de forma segura
+                    if (decimal.TryParse(txtSalario.Text, out decimal salario))
+                    {
+                        Actualizar.Salario = salario;
+                    }
+                    else
+                    {
+                        MessageBox.Show("El salario no es válido.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-                    // Recargar los datos del grid
-                    xpCollectionEmpleado.Reload();
+                    // Manejar el caso de slueUsuario.EditValue
+                    if (int.TryParse(slueUsuario.EditValue?.ToString(), out int usuarioId))
+                    {
+                        Actualizar.Usuario_id = unitOfWork1.FindObject<Usuarios>(CriteriaOperator.Parse("Id = ?", usuarioId));
+                    }
+                    else
+                    {
+                        MessageBox.Show("El valor seleccionado en el campo de usuario no es válido.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-                    // Limpiar los campos
-                    Limpiar();
-                    Habilitar(true, false, false, false, false, false);
+                    // Guardar cambios y confirmar la actualización
+                    try
+                    {
+                        Actualizar.Save();
+                        unitOfWork1.CommitChanges();
 
+                        MessageBox.Show("Actualizado con éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Recargar los datos del grid
+                        xpCollectionEmpleado.Reload();
+
+                        // Limpiar los campos
+                        Limpiar();
+                        Habilitar(true, false, false, false, false, false);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al actualizar el registro: {ex.Message}", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("No encontrado", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se encontró el empleado seleccionado.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                // Si no hay ningún usuario seleccionado
-                MessageBox.Show("Por favor, selecciona un registro para actualizar", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Si no hay ningún empleado seleccionado
+                MessageBox.Show("Por favor, selecciona un registro para actualizar.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpiar();
             Habilitar(true, false, false, false, false, false);
+            xpCollectionEmpleado.Reload();
         }
 
         private void gridViewEmpleado_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)

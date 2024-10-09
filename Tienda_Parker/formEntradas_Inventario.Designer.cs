@@ -31,19 +31,27 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formEntradas_Inventario));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.searchLookUpEdit2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEliminar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnActualizar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
+            this.searchProveedor = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.xpCollectionProveedores = new DevExpress.Xpo.XPCollection(this.components);
+            this.unitOfWork1 = new DevExpress.Xpo.UnitOfWork(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.searchProducto = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.xpCollectionProducto = new DevExpress.Xpo.XPCollection(this.components);
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridControlEntradaInventario = new DevExpress.XtraGrid.GridControl();
             this.xpCollectionEntradas_Inventario = new DevExpress.Xpo.XPCollection(this.components);
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridViewEntradaInventario = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -51,25 +59,17 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCantidad = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPrecio_compra = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.unitOfWork1 = new DevExpress.Xpo.UnitOfWork(this.components);
-            this.xpCollectionProducto = new DevExpress.Xpo.XPCollection(this.components);
-            this.xpCollectionProveedores = new DevExpress.Xpo.XPCollection(this.components);
-            this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
-            this.btnActualizar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEliminar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionEntradas_Inventario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchProveedor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProveedores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchProducto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlEntradaInventario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionEntradas_Inventario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEntradaInventario)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,11 +79,11 @@
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Controls.Add(this.searchLookUpEdit2);
-            this.panel1.Controls.Add(this.searchLookUpEdit1);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.searchProveedor);
+            this.panel1.Controls.Add(this.searchProducto);
+            this.panel1.Controls.Add(this.txtPrecioCompra);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtCantidad);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -93,18 +93,79 @@
             this.panel1.Size = new System.Drawing.Size(159, 450);
             this.panel1.TabIndex = 0;
             // 
-            // searchLookUpEdit2
+            // btnGuardar
             // 
-            this.searchLookUpEdit2.Location = new System.Drawing.Point(24, 76);
-            this.searchLookUpEdit2.Name = "searchLookUpEdit2";
-            this.searchLookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.btnGuardar.AutoSize = true;
+            this.btnGuardar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.ImageOptions.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(39, 263);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(81, 36);
+            this.btnGuardar.TabIndex = 39;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.AutoSize = true;
+            this.btnEliminar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.ImageOptions.Image")));
+            this.btnEliminar.Location = new System.Drawing.Point(42, 305);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(78, 36);
+            this.btnEliminar.TabIndex = 38;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.AutoSize = true;
+            this.btnCancelar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.ImageOptions.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(40, 402);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(84, 36);
+            this.btnCancelar.TabIndex = 37;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.AutoSize = true;
+            this.btnActualizar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.ImageOptions.Image")));
+            this.btnActualizar.Location = new System.Drawing.Point(35, 347);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(89, 36);
+            this.btnActualizar.TabIndex = 36;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.AutoSize = true;
+            this.btnNuevo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.ImageOptions.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(42, 221);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(73, 36);
+            this.btnNuevo.TabIndex = 35;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // searchProveedor
+            // 
+            this.searchProveedor.Location = new System.Drawing.Point(24, 76);
+            this.searchProveedor.Name = "searchProveedor";
+            this.searchProveedor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit2.Properties.DataSource = this.xpCollectionProveedores;
-            this.searchLookUpEdit2.Properties.DisplayMember = "Nombre";
-            this.searchLookUpEdit2.Properties.PopupView = this.gridView1;
-            this.searchLookUpEdit2.Properties.ValueMember = "Id";
-            this.searchLookUpEdit2.Size = new System.Drawing.Size(100, 20);
-            this.searchLookUpEdit2.TabIndex = 34;
+            this.searchProveedor.Properties.DataSource = this.xpCollectionProveedores;
+            this.searchProveedor.Properties.DisplayMember = "Nombre";
+            this.searchProveedor.Properties.NullText = "Elija Proveedor";
+            this.searchProveedor.Properties.PopupView = this.gridView1;
+            this.searchProveedor.Properties.ValueMember = "Id";
+            this.searchProveedor.Size = new System.Drawing.Size(100, 20);
+            this.searchProveedor.TabIndex = 34;
+            // 
+            // xpCollectionProveedores
+            // 
+            this.xpCollectionProveedores.ObjectType = typeof(Tienda_Parker.Database.Proveedores);
+            this.xpCollectionProveedores.Session = this.unitOfWork1;
             // 
             // gridView1
             // 
@@ -113,18 +174,24 @@
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // searchLookUpEdit1
+            // searchProducto
             // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(24, 25);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.searchProducto.Location = new System.Drawing.Point(24, 25);
+            this.searchProducto.Name = "searchProducto";
+            this.searchProducto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.DataSource = this.xpCollectionProducto;
-            this.searchLookUpEdit1.Properties.DisplayMember = "Nombre";
-            this.searchLookUpEdit1.Properties.PopupView = this.searchLookUpEdit1View;
-            this.searchLookUpEdit1.Properties.ValueMember = "Id";
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(100, 20);
-            this.searchLookUpEdit1.TabIndex = 33;
+            this.searchProducto.Properties.DataSource = this.xpCollectionProducto;
+            this.searchProducto.Properties.DisplayMember = "Nombre";
+            this.searchProducto.Properties.NullText = "Elija Producto";
+            this.searchProducto.Properties.PopupView = this.searchLookUpEdit1View;
+            this.searchProducto.Properties.ValueMember = "Id";
+            this.searchProducto.Size = new System.Drawing.Size(100, 20);
+            this.searchProducto.TabIndex = 33;
+            // 
+            // xpCollectionProducto
+            // 
+            this.xpCollectionProducto.ObjectType = typeof(Tienda_Parker.Database.Productos);
+            this.xpCollectionProducto.Session = this.unitOfWork1;
             // 
             // searchLookUpEdit1View
             // 
@@ -133,12 +200,12 @@
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // textBox4
+            // txtPrecioCompra
             // 
-            this.textBox4.Location = new System.Drawing.Point(36, 185);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(88, 20);
-            this.textBox4.TabIndex = 6;
+            this.txtPrecioCompra.Location = new System.Drawing.Point(36, 185);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(88, 20);
+            this.txtPrecioCompra.TabIndex = 6;
             // 
             // label4
             // 
@@ -149,12 +216,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Precio de Compra";
             // 
-            // textBox3
+            // txtCantidad
             // 
-            this.textBox3.Location = new System.Drawing.Point(48, 126);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 20);
-            this.textBox3.TabIndex = 4;
+            this.txtCantidad.Location = new System.Drawing.Point(48, 126);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(64, 20);
+            this.txtCantidad.TabIndex = 4;
             // 
             // label3
             // 
@@ -183,25 +250,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Producto";
             // 
-            // gridControl1
+            // gridControlEntradaInventario
             // 
-            this.gridControl1.DataSource = this.xpCollectionEntradas_Inventario;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(159, 0);
-            this.gridControl1.MainView = this.gridView2;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(641, 450);
-            this.gridControl1.TabIndex = 1;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
+            this.gridControlEntradaInventario.DataSource = this.xpCollectionEntradas_Inventario;
+            this.gridControlEntradaInventario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlEntradaInventario.Location = new System.Drawing.Point(159, 0);
+            this.gridControlEntradaInventario.MainView = this.gridViewEntradaInventario;
+            this.gridControlEntradaInventario.Name = "gridControlEntradaInventario";
+            this.gridControlEntradaInventario.Size = new System.Drawing.Size(641, 450);
+            this.gridControlEntradaInventario.TabIndex = 1;
+            this.gridControlEntradaInventario.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewEntradaInventario});
             // 
             // xpCollectionEntradas_Inventario
             // 
             this.xpCollectionEntradas_Inventario.ObjectType = typeof(Tienda_Parker.Database.Entradas_inventario);
             // 
-            // gridView2
+            // gridViewEntradaInventario
             // 
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridViewEntradaInventario.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.gridColumn1,
             this.gridColumn2,
@@ -209,8 +276,11 @@
             this.gridColumn4,
             this.colCantidad,
             this.colPrecio_compra});
-            this.gridView2.GridControl = this.gridControl1;
-            this.gridView2.Name = "gridView2";
+            this.gridViewEntradaInventario.GridControl = this.gridControlEntradaInventario;
+            this.gridViewEntradaInventario.Name = "gridViewEntradaInventario";
+            this.gridViewEntradaInventario.OptionsBehavior.Editable = false;
+            this.gridViewEntradaInventario.OptionsView.ShowDetailButtons = false;
+            this.gridViewEntradaInventario.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewEntradaInventario_RowClick);
             // 
             // colId
             // 
@@ -257,87 +327,31 @@
             this.colPrecio_compra.Visible = true;
             this.colPrecio_compra.VisibleIndex = 3;
             // 
-            // xpCollectionProducto
-            // 
-            this.xpCollectionProducto.ObjectType = typeof(Tienda_Parker.Database.Productos);
-            this.xpCollectionProducto.Session = this.unitOfWork1;
-            // 
-            // xpCollectionProveedores
-            // 
-            this.xpCollectionProveedores.ObjectType = typeof(Tienda_Parker.Database.Proveedores);
-            this.xpCollectionProveedores.Session = this.unitOfWork1;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.AutoSize = true;
-            this.btnNuevo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnNuevo.Location = new System.Drawing.Point(42, 221);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(73, 36);
-            this.btnNuevo.TabIndex = 35;
-            this.btnNuevo.Text = "Nuevo";
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.AutoSize = true;
-            this.btnActualizar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.ImageOptions.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(42, 389);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(89, 36);
-            this.btnActualizar.TabIndex = 36;
-            this.btnActualizar.Text = "Actualizar";
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.AutoSize = true;
-            this.btnEliminar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.ImageOptions.Image")));
-            this.btnEliminar.Location = new System.Drawing.Point(42, 305);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(78, 36);
-            this.btnEliminar.TabIndex = 38;
-            this.btnEliminar.Text = "Eliminar";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.AutoSize = true;
-            this.btnGuardar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.ImageOptions.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(39, 263);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(81, 36);
-            this.btnGuardar.TabIndex = 39;
-            this.btnGuardar.Text = "Guardar";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.AutoSize = true;
-            this.btnCancelar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.ImageOptions.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(42, 347);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(84, 36);
-            this.btnCancelar.TabIndex = 37;
-            this.btnCancelar.Text = "Cancelar";
-            // 
             // formEntradas_Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.gridControlEntradaInventario);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formEntradas_Inventario";
             this.Text = "Entradas_Inventario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.formEntradas_Inventario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionEntradas_Inventario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchProveedor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProveedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchProducto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlEntradaInventario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpCollectionEntradas_Inventario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewEntradaInventario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,17 +360,17 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit2;
+        private DevExpress.XtraEditors.SearchLookUpEdit searchProveedor;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
+        private DevExpress.XtraEditors.SearchLookUpEdit searchProducto;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.GridControl gridControlEntradaInventario;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewEntradaInventario;
         private DevExpress.Xpo.UnitOfWork unitOfWork1;
         private DevExpress.Xpo.XPCollection xpCollectionEntradas_Inventario;
         private DevExpress.XtraGrid.Columns.GridColumn colId;

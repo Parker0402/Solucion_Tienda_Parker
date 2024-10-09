@@ -49,6 +49,7 @@
     <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -92,6 +93,12 @@
     <Compile Include="formEntradas_Inventario.Designer.cs">
       <DependentUpon>formEntradas_Inventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="formInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInformes.Designer.cs">
+      <DependentUpon>formInformes.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +128,18 @@
     </Compile>
     <Compile Include="formUsuarios.Designer.cs">
       <DependentUpon>formUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVentas.Designer.cs">
+      <DependentUpon>formVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\InformeVentasPorRangoDeFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\InformeVentasPorRangoDeFechas.Designer.cs">
+      <DependentUpon>InformeVentasPorRangoDeFechas.cs</DependentUpon>
     </Compile>
     <Compile Include="ORMDataModelDBCode\ConnectionHelper.cs" />
     <Compile Include="ORMDataModelDBCode\Detalle_facturas.cs" />
@@ -163,6 +182,9 @@
     <EmbeddedResource Include="formEntradas_Inventario.resx">
       <DependentUpon>formEntradas_Inventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formInformes.resx">
+      <DependentUpon>formInformes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formUsuarios.resx">
       <DependentUpon>formUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVentas.resx">
+      <DependentUpon>formVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformeVentasPorRangoDeFechas.resx">
+      <DependentUpon>InformeVentasPorRangoDeFechas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
