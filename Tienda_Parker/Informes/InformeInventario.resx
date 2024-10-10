@@ -1,0 +1,1910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="printPreviewBarCheckItem7.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiParameters.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiMultiplePages.Caption" xml:space="preserve">
+    <value>Multiple Pages</value>
+  </data>
+  <data name="bbiDocumentMap.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiZoomOut.Hint" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 498</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bbiZoomOut.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiEditPageHF.Caption" xml:space="preserve">
+    <value>Header And Footer</value>
+  </data>
+  <data name="&gt;&gt;bbiShowLastPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem18.Caption" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="printPreviewBarCheckItem18.Hint" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bbiShowNextPage.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem18.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiZoom.Name" xml:space="preserve">
+    <value>bbiZoom</value>
+  </data>
+  <data name="&gt;&gt;bbiParameters.Name" xml:space="preserve">
+    <value>bbiParameters</value>
+  </data>
+  <data name="printPreviewBarCheckItem18.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem3.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem3</value>
+  </data>
+  <data name="bbiEditPageHF.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem12.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem12</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiShowFirstPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="zoomTrackBarEditItem.EditWidth" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="bbiShowNextPage.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiFind.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiMultiplePages.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem10.Hint" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="miFile.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bbiOpen.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiSendFile.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;previewBar1.Name" xml:space="preserve">
+    <value>previewBar1</value>
+  </data>
+  <data name="bbiSendFile.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="progressBarEditItem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiScale.Name" xml:space="preserve">
+    <value>bbiScale</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiZoomOut.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;miPageLayout.Name" xml:space="preserve">
+    <value>miPageLayout</value>
+  </data>
+  <data name="miFile.Caption" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="bbiWatermark.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem2.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem2</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem10.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem10</value>
+  </data>
+  <data name="printPreviewBarItem1.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem2.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem10.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="zoomTrackBarEditItem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.Caption" xml:space="preserve">
+    <value>DOCX File</value>
+  </data>
+  <data name="miPageLayoutContinuous.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem17.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem17</value>
+  </data>
+  <data name="bbiZoomOut.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem18.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;previewBar2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiClosePreview.Caption" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="&gt;&gt;bbiClosePreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiCustomize.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="printPreviewBarItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiZoomOut.Caption" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="printPreviewBarCheckItem19.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 453</value>
+  </data>
+  <data name="bbiWatermark.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiParameters.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItemZoomFactor.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem12.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiSendFile.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="documentViewerBarManager1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyNC4xLCBWZXJzaW9uPTI0LjEu
+        NS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAAChE
+        ZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0cmVhbWVyAAAAAAIAAAAL
+</value>
+  </data>
+  <data name="bbiWatermark.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewStaticItemZoomFactor.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiPrintDirect.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="documentViewer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="previewBar2.Text" xml:space="preserve">
+    <value>Status Bar</value>
+  </data>
+  <data name="bbiSendFile.Caption" xml:space="preserve">
+    <value>Send via E-Mail...</value>
+  </data>
+  <data name="bbiThumbnails.Caption" xml:space="preserve">
+    <value>Thumbnails</value>
+  </data>
+  <data name="miBackground.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;miFile.Name" xml:space="preserve">
+    <value>miFile</value>
+  </data>
+  <data name="progressBarEditItem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiPrintDirect.Hint" xml:space="preserve">
+    <value>Quick Print</value>
+  </data>
+  <data name="&gt;&gt;documentViewer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;miPageLayoutFacing.Name" xml:space="preserve">
+    <value>miPageLayoutFacing</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem6.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem6</value>
+  </data>
+  <data name="printPreviewStaticItemZoomFactor.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiFind.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiHighlightEditingFields.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiSendFile.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;documentViewer2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.DocumentViewer, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewStaticItemZoomFactor.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem3.Caption" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="bbiShowNextPage.Hint" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.Caption" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="bbiZoom.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiFind.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem2.Hint" xml:space="preserve">
+    <value>HTML File</value>
+  </data>
+  <data name="&gt;&gt;bbiZoomOut.Name" xml:space="preserve">
+    <value>bbiZoomOut</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemProgressBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemProgressBar, DevExpress.XtraEditors.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiOpen.Hint" xml:space="preserve">
+    <value>Open a document</value>
+  </data>
+  <data name="&gt;&gt;progressBarEditItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.ProgressBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 453</value>
+  </data>
+  <data name="&gt;&gt;previewBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="miView.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem14.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiPageSetup.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiPageSetup.Caption" xml:space="preserve">
+    <value>Page Set&amp;up...</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="documentViewer2.IsMetric" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="miToolbars.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem16.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiMagnifier.Caption" xml:space="preserve">
+    <value>Magnifier</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiHandTool.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiHighlightEditingFields.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiMultiplePages.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 22</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.Caption" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>850, 520</value>
+  </data>
+  <data name="&gt;&gt;bbiMultiplePages.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem15.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem4.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem4</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem12.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.Hint" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiCustomize.Name" xml:space="preserve">
+    <value>bbiCustomize</value>
+  </data>
+  <data name="miPageLayout.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem10.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="miPageLayoutContinuous.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem4.Caption" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="bbiFind.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiPageSetup.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiShowNextPage.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem18.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiPageSetup.Name" xml:space="preserve">
+    <value>bbiPageSetup</value>
+  </data>
+  <data name="bbiFind.Hint" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;bbiSendFile.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiZoomIn.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miBackground.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiPrintDirect.Caption" xml:space="preserve">
+    <value>P&amp;rint</value>
+  </data>
+  <data name="&gt;&gt;bbiSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiFillBackground.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miToolbars.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 45</value>
+  </data>
+  <data name="bbiPrint.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem12.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiShowFirstPage.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem15.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiClosePreview.Hint" xml:space="preserve">
+    <value>Close Preview</value>
+  </data>
+  <data name="progressBarEditItem.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiPrint.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiPrint.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="documentViewer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bbiThumbnails.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarItem1.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miBackground.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem4.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiFillBackground.Caption" xml:space="preserve">
+    <value>&amp;Color...</value>
+  </data>
+  <data name="bbiMagnifier.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiMultiplePages.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiPrint.Hint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.Hint" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="bbiShowFirstPage.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miView.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="miView.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiHandTool.Hint" xml:space="preserve">
+    <value>Hand Tool</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem1.Name" xml:space="preserve">
+    <value>printPreviewBarItem1</value>
+  </data>
+  <data name="printPreviewBarCheckItem15.Caption" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;miBackground.Name" xml:space="preserve">
+    <value>miBackground</value>
+  </data>
+  <data name="bbiZoomIn.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiCustomize.Caption" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="bbiZoomIn.Caption" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="bbiZoom.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiPrint.Name" xml:space="preserve">
+    <value>bbiPrint</value>
+  </data>
+  <data name="bbiOpen.Caption" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="printPreviewRepositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v24.1">
+    <value>Combo</value>
+  </data>
+  <data name="&gt;&gt;bbiEditPageHF.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;miToolbars.Name" xml:space="preserve">
+    <value>miToolbars</value>
+  </data>
+  <data name="documentViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 453</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiZoomIn.Hint" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;repositoryItemZoomTrackBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="miBackground.Caption" xml:space="preserve">
+    <value>&amp;Background</value>
+  </data>
+  <data name="bbiExportFile.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem19.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="zoomTrackBarEditItem.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiFillBackground.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;miPageLayoutFacing.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewStaticItemZoomFactor.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiSave.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarEditItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiShowFirstPage.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem15.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;previewBar2.Name" xml:space="preserve">
+    <value>previewBar2</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiDocumentMap.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem6.Caption" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="bbiClosePreview.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;documentViewer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bbiWatermark.Name" xml:space="preserve">
+    <value>bbiWatermark</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.Hint" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="bbiCustomize.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="progressBarEditItem.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiScale.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem13.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiMagnifier.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiPrint.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiDocumentMap.Caption" xml:space="preserve">
+    <value>Document Map</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiShowLastPage.Name" xml:space="preserve">
+    <value>bbiShowLastPage</value>
+  </data>
+  <data name="miPageLayoutFacing.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem19.Caption" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="bbiZoomIn.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewStaticItemPageOfPages.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiPageSetup.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miPageLayoutContinuous.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiExportFile.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;previewBar3.Name" xml:space="preserve">
+    <value>previewBar3</value>
+  </data>
+  <data name="&gt;&gt;previewBar3.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiClosePreview.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem9.Caption" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="bbiPrint.Caption" xml:space="preserve">
+    <value>&amp;Print...</value>
+  </data>
+  <data name="bbiHandTool.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiPrintDirect.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem12.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiThumbnails.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiShowLastPage.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiOpen.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;documentViewer2.Name" xml:space="preserve">
+    <value>documentViewer2</value>
+  </data>
+  <data name="bbiFind.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miPageLayoutFacing.Caption" xml:space="preserve">
+    <value>&amp;Facing</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem16.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem16</value>
+  </data>
+  <data name="bbiPrint.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem11.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem11</value>
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;bbiOpen.Name" xml:space="preserve">
+    <value>bbiOpen</value>
+  </data>
+  <data name="printPreviewBarCheckItem15.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="previewBar3.Text" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiDocumentMap.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="documentViewer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>850, 453</value>
+  </data>
+  <data name="&gt;&gt;bbiExportFile.Name" xml:space="preserve">
+    <value>bbiExportFile</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InformeInventario</value>
+  </data>
+  <data name="bbiShowPrevPage.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;documentViewer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;miPageLayout.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiMultiplePages.Name" xml:space="preserve">
+    <value>bbiMultiplePages</value>
+  </data>
+  <data name="bbiDocumentMap.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miPageLayoutContinuous.Caption" xml:space="preserve">
+    <value>&amp;Continuous</value>
+  </data>
+  <data name="bbiOpen.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiParameters.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiMagnifier.Hint" xml:space="preserve">
+    <value>Magnifier</value>
+  </data>
+  <data name="bbiMagnifier.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;miFile.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiMagnifier.Name" xml:space="preserve">
+    <value>bbiMagnifier</value>
+  </data>
+  <data name="printPreviewBarCheckItem6.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;documentViewerBarManager1.Name" xml:space="preserve">
+    <value>documentViewerBarManager1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem14.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem14</value>
+  </data>
+  <data name="bbiShowNextPage.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>850, 45</value>
+  </data>
+  <data name="&gt;&gt;miPageLayoutContinuous.Name" xml:space="preserve">
+    <value>miPageLayoutContinuous</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.Caption" xml:space="preserve">
+    <value>DOCX File</value>
+  </data>
+  <data name="bbiShowLastPage.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiShowPrevPage.Caption" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="bbiPrintDirect.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem7.Hint" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="&gt;&gt;bbiDocumentMap.Name" xml:space="preserve">
+    <value>bbiDocumentMap</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiShowLastPage.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiScale.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bbiZoomIn.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiMultiplePages.Hint" xml:space="preserve">
+    <value>Multiple Pages</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="documentViewer1.IsMetric" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.Hint" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="bbiShowPrevPage.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="documentViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="bbiShowLastPage.Hint" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem14.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiScale.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewStaticItemPageOfPages.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemZoomTrackBar1.Name" xml:space="preserve">
+    <value>repositoryItemZoomTrackBar1</value>
+  </data>
+  <data name="miPageLayout.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem5.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiClosePreview.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem12.Caption" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="&gt;&gt;bbiOpen.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiShowLastPage.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem13.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiSendFile.Name" xml:space="preserve">
+    <value>bbiSendFile</value>
+  </data>
+  <data name="progressBarEditItem.EditWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem7.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem7</value>
+  </data>
+  <data name="bbiScale.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItemPageOfPages.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiScale.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiScale.Hint" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="&gt;&gt;bbiPrintDirect.Name" xml:space="preserve">
+    <value>bbiPrintDirect</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiFind.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="miPageLayout.Caption" xml:space="preserve">
+    <value>&amp;Page Layout</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;documentViewer1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.DocumentViewer, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;progressBarEditItem.Name" xml:space="preserve">
+    <value>progressBarEditItem</value>
+  </data>
+  <data name="&gt;&gt;bbiShowNextPage.Name" xml:space="preserve">
+    <value>bbiShowNextPage</value>
+  </data>
+  <data name="&gt;&gt;bbiHandTool.Name" xml:space="preserve">
+    <value>bbiHandTool</value>
+  </data>
+  <data name="bbiPageSetup.Hint" xml:space="preserve">
+    <value>Page Setup</value>
+  </data>
+  <data name="&gt;&gt;bbiHighlightEditingFields.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiWatermark.Caption" xml:space="preserve">
+    <value>&amp;Watermark...</value>
+  </data>
+  <data name="printPreviewBarCheckItem6.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem10.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miPageLayoutFacing.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewStaticItemPageOfPages.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiExportFile.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.Caption" xml:space="preserve">
+    <value>HTML File</value>
+  </data>
+  <data name="&gt;&gt;bbiZoomIn.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiEditPageHF.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem15.Hint" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="bbiMultiplePages.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiClosePreview.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.Caption" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="miPageLayoutFacing.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem6.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiEditPageHF.Hint" xml:space="preserve">
+    <value>Header And Footer</value>
+  </data>
+  <data name="bbiScale.Caption" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem16.Caption" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.Hint" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="bbiSave.Caption" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.Hint" xml:space="preserve">
+    <value>DOCX File</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiEditPageHF.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiThumbnails.Name" xml:space="preserve">
+    <value>bbiThumbnails</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem7.Caption" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.Hint" xml:space="preserve">
+    <value>DOCX File</value>
+  </data>
+  <data name="bbiThumbnails.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiCustomize.Hint" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="bbiFillBackground.Hint" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewStaticItemZoomFactor.Caption" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="documentViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="miFile.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiHandTool.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewStaticItemPageOfPages.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="bbiZoom.Hint" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem1.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem1</value>
+  </data>
+  <data name="bbiThumbnails.Hint" xml:space="preserve">
+    <value>Thumbnails</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="miPageLayoutContinuous.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiExportFile.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem19.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;repositoryItemProgressBar1.Name" xml:space="preserve">
+    <value>repositoryItemProgressBar1</value>
+  </data>
+  <data name="miPageLayoutContinuous.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiShowFirstPage.Name" xml:space="preserve">
+    <value>bbiShowFirstPage</value>
+  </data>
+  <data name="bbiHandTool.Caption" xml:space="preserve">
+    <value>Hand Tool</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiDocumentMap.Hint" xml:space="preserve">
+    <value>Document Map</value>
+  </data>
+  <data name="bbiWatermark.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiShowNextPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiWatermark.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="zoomTrackBarEditItem.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiThumbnails.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="previewBar1.Text" xml:space="preserve">
+    <value>Toolbar</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiOpen.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem18.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem18</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="miBackground.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiClosePreview.Name" xml:space="preserve">
+    <value>bbiClosePreview</value>
+  </data>
+  <data name="printPreviewBarItem1.Caption" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="printPreviewBarCheckItem7.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miView.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miFile.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem10.Caption" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="&gt;&gt;bbiShowPrevPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiHandTool.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miToolbars.Caption" xml:space="preserve">
+    <value>Bars</value>
+  </data>
+  <data name="bbiHighlightEditingFields.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiZoomOut.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem9.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem19.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;miToolbars.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarToolbarsListItem, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem1.Caption" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="bbiSave.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiDocumentMap.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miToolbars.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewStaticItemPageOfPages.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;zoomTrackBarEditItem.Name" xml:space="preserve">
+    <value>zoomTrackBarEditItem</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem9.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem9</value>
+  </data>
+  <data name="miPageLayout.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiEditPageHF.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miToolbars.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiExportFile.Caption" xml:space="preserve">
+    <value>Export Document...</value>
+  </data>
+  <data name="bbiFillBackground.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiSave.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiParameters.Caption" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="bbiSendFile.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem11.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="miPageLayout.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewRepositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiHighlightEditingFields.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem6.Hint" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="bbiShowFirstPage.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiZoom.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miToolbars.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiSave.Hint" xml:space="preserve">
+    <value>Save the document</value>
+  </data>
+  <data name="bbiPrintDirect.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiFillBackground.Name" xml:space="preserve">
+    <value>bbiFillBackground</value>
+  </data>
+  <data name="&gt;&gt;bbiFillBackground.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="miFile.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiExportFile.Hint" xml:space="preserve">
+    <value>Export Document...</value>
+  </data>
+  <data name="&gt;&gt;bbiZoomIn.Name" xml:space="preserve">
+    <value>bbiZoomIn</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem7.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiPageSetup.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem6.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiParameters.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="bbiDocumentMap.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem12.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarItem1.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiPrintDirect.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiShowLastPage.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.Hint" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiHighlightEditingFields.Caption" xml:space="preserve">
+    <value>Editing Fields</value>
+  </data>
+  <data name="bbiMultiplePages.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiScale.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiSave.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiZoom.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;documentViewerBarManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.DocumentViewerBarManager, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="bbiHighlightEditingFields.Hint" xml:space="preserve">
+    <value>Highlight Editing Fields</value>
+  </data>
+  <data name="&gt;&gt;bbiEditPageHF.Name" xml:space="preserve">
+    <value>bbiEditPageHF</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem19.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem19</value>
+  </data>
+  <data name="miBackground.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewStaticItemZoomFactor.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarItem1.Hint" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="bbiShowLastPage.Caption" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiCustomize.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiSave.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiHandTool.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem10.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiSave.Name" xml:space="preserve">
+    <value>bbiSave</value>
+  </data>
+  <data name="bbiShowPrevPage.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiMagnifier.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiEditPageHF.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiCustomize.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="zoomTrackBarEditItem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiHighlightEditingFields.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiZoom.EditWidth" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="bbiPrint.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem3.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bbiZoom.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.ZoomBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.Hint" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="&gt;&gt;miBackground.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="printPreviewBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="progressBarEditItem.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiPageSetup.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiFillBackground.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem7.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem6.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miPageLayoutFacing.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiFind.Caption" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItemZoomFactor.Name" xml:space="preserve">
+    <value>printPreviewStaticItemZoomFactor</value>
+  </data>
+  <data name="&gt;&gt;bbiHighlightEditingFields.Name" xml:space="preserve">
+    <value>bbiHighlightEditingFields</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem15.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem15</value>
+  </data>
+  <data name="bbiCustomize.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiShowNextPage.Caption" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="bbiThumbnails.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem17.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItemPageOfPages.Name" xml:space="preserve">
+    <value>printPreviewStaticItemPageOfPages</value>
+  </data>
+  <data name="&gt;&gt;bbiThumbnails.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiShowFirstPage.Caption" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiShowNextPage.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;bbiWatermark.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiFind.Name" xml:space="preserve">
+    <value>bbiFind</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem17.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="miFile.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;miView.Name" xml:space="preserve">
+    <value>miView</value>
+  </data>
+  <data name="bbiSendFile.Hint" xml:space="preserve">
+    <value>Send via E-Mail...</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem5.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem5</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiClosePreview.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiShowPrevPage.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem8.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem8</value>
+  </data>
+  <data name="printPreviewBarCheckItem7.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem19.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewStaticItemPageOfPages.Caption" xml:space="preserve">
+    <value>Nothing</value>
+  </data>
+  <data name="miView.Caption" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="bbiZoom.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiWatermark.Hint" xml:space="preserve">
+    <value>Watermark</value>
+  </data>
+  <data name="bbiCustomize.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem15.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="printPreviewBarCheckItem12.Hint" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="&gt;&gt;printPreviewRepositoryItemComboBox1.Name" xml:space="preserve">
+    <value>printPreviewRepositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;bbiShowPrevPage.Name" xml:space="preserve">
+    <value>bbiShowPrevPage</value>
+  </data>
+  <data name="bbiExportFile.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="miPageLayoutFacing.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiExportFile.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiMagnifier.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="bbiPrintDirect.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiParameters.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiShowFirstPage.Hint" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="bbiShowPrevPage.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.Caption" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="&gt;&gt;bbiZoomOut.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="miPageLayout.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem18.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;miPageLayoutContinuous.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiPageSetup.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiShowFirstPage.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="printPreviewBarCheckItem10.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;miView.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="zoomTrackBarEditItem.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiHandTool.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiOpen.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Informe de Inventario</value>
+  </data>
+  <data name="&gt;&gt;documentViewer2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="documentViewer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiZoomOut.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;bbiParameters.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="bbiZoomIn.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="miView.ImageOptions.LargeImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="bbiZoom.Caption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem13.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem13</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.Hint" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="printPreviewBarCheckItem19.Hint" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="bbiMagnifier.ImageOptions.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem8.Hint" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="&gt;&gt;documentViewer1.Name" xml:space="preserve">
+    <value>documentViewer1</value>
+  </data>
+  <data name="bbiParameters.Hint" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="documentViewer2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bbiFillBackground.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="printPreviewBarCheckItem8.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="bbiShowPrevPage.Hint" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <metadata name="documentViewerBarManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es</value>
+  </metadata>
+</root>

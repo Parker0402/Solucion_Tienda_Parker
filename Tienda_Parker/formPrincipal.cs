@@ -199,7 +199,19 @@ namespace Tienda_Parker
 
         private void formPrincipal_Load(object sender, EventArgs e)
         {
+            // Busca si el formulario ya está abierto
+            var formularioExistente = this.MdiChildren.OfType<formGraficos>().FirstOrDefault();
 
+            // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+            if (formularioExistente == null)
+            {
+                var nuevoFormulario = new formGraficos { MdiParent = this };
+                nuevoFormulario.Show();
+            }
+            else
+            {
+                formularioExistente.BringToFront();
+            }
         }
 
         private void btnRespaldo_Click(object sender, EventArgs e)
@@ -336,6 +348,7 @@ namespace Tienda_Parker
                     btnRespaldo.Enabled = true; // Respaldos
                     btnRestaurar.Enabled = true; // Restaurar
                     btnInformes.Enabled = true; // Acceso a informes
+                    btnInicio.Enabled = true;
                     break;
 
                 case "Vendedor":
@@ -349,6 +362,7 @@ namespace Tienda_Parker
                     btnRespaldo.Enabled = false; // Sin acceso a respaldo
                     btnRestaurar.Enabled = false; // Sin acceso a restaurar
                     btnInformes.Enabled = true; // Puede ver informes
+                    btnInicio.Enabled = true;
                     break;
 
                 case "Consulta":
@@ -362,6 +376,7 @@ namespace Tienda_Parker
                     btnRespaldo.Enabled = false; // Sin acceso a respaldo
                     btnRestaurar.Enabled = false; // Sin acceso a restaurar
                     btnInformes.Enabled = true; // Puede ver informes
+                    btnInicio.Enabled = false;
                     break;
 
                 default:
@@ -384,7 +399,31 @@ namespace Tienda_Parker
             btnEntradaInventario.Enabled = false;
             btnRespaldo.Enabled = false;
             btnRestaurar.Enabled = false;
+            btnInicio.Enabled=false;
         }
 
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<formGraficos>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new formGraficos { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
     }
 }

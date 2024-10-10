@@ -50,6 +50,13 @@ namespace Tienda_Parker.Database
             get { return fCliente; }
             set { SetPropertyValue<string>(nameof(Cliente), ref fCliente, value); }
         }
+        DateTime fFecha_factura;
+        [Persistent(@"fecha_factura")]
+        public DateTime Fecha_factura
+        {
+            get { return fFecha_factura; }
+            set { SetPropertyValue<DateTime>(nameof(Fecha_factura), ref fFecha_factura, value); }
+        }
         [Association(@"Detalle_facturasReferencesFacturas")]
         public XPCollection<Detalle_facturas> Detalle_facturass { get { return GetCollection<Detalle_facturas>(nameof(Detalle_facturass)); } }
         [Association(@"Historial_ventasReferencesFacturas")]

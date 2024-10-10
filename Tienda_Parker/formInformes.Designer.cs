@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.btnVentasPorFechas = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnInformeDeInventario = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -50,7 +50,7 @@
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.btnVentasPorFechas);
-            this.layoutControl1.Controls.Add(this.simpleButton2);
+            this.layoutControl1.Controls.Add(this.btnInformeDeInventario);
             this.layoutControl1.Controls.Add(this.simpleButton3);
             this.layoutControl1.Controls.Add(this.simpleButton4);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -60,6 +60,44 @@
             this.layoutControl1.Size = new System.Drawing.Size(1038, 120);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // btnVentasPorFechas
+            // 
+            this.btnVentasPorFechas.Location = new System.Drawing.Point(12, 12);
+            this.btnVentasPorFechas.Name = "btnVentasPorFechas";
+            this.btnVentasPorFechas.Size = new System.Drawing.Size(250, 96);
+            this.btnVentasPorFechas.StyleController = this.layoutControl1;
+            this.btnVentasPorFechas.TabIndex = 4;
+            this.btnVentasPorFechas.Text = "Ventas por rango de fechas";
+            this.btnVentasPorFechas.Click += new System.EventHandler(this.btnVentasPorFechas_Click);
+            // 
+            // btnInformeDeInventario
+            // 
+            this.btnInformeDeInventario.Location = new System.Drawing.Point(266, 12);
+            this.btnInformeDeInventario.Name = "btnInformeDeInventario";
+            this.btnInformeDeInventario.Size = new System.Drawing.Size(251, 96);
+            this.btnInformeDeInventario.StyleController = this.layoutControl1;
+            this.btnInformeDeInventario.TabIndex = 5;
+            this.btnInformeDeInventario.Text = "Informe de Inventario";
+            this.btnInformeDeInventario.Click += new System.EventHandler(this.btnInformeDeInventario_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(521, 12);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(250, 96);
+            this.simpleButton3.StyleController = this.layoutControl1;
+            this.simpleButton3.TabIndex = 6;
+            this.simpleButton3.Text = "simpleButton3";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(775, 12);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(251, 96);
+            this.simpleButton4.StyleController = this.layoutControl1;
+            this.simpleButton4.TabIndex = 7;
+            this.simpleButton4.Text = "simpleButton4";
             // 
             // layoutControlGroup1
             // 
@@ -74,16 +112,6 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(1038, 120);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // btnVentasPorFechas
-            // 
-            this.btnVentasPorFechas.Location = new System.Drawing.Point(12, 12);
-            this.btnVentasPorFechas.Name = "btnVentasPorFechas";
-            this.btnVentasPorFechas.Size = new System.Drawing.Size(250, 96);
-            this.btnVentasPorFechas.StyleController = this.layoutControl1;
-            this.btnVentasPorFechas.TabIndex = 4;
-            this.btnVentasPorFechas.Text = "Ventas por rango de fechas";
-            this.btnVentasPorFechas.Click += new System.EventHandler(this.btnVentasPorFechas_Click);
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.btnVentasPorFechas;
@@ -96,18 +124,9 @@
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(266, 12);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(251, 96);
-            this.simpleButton2.StyleController = this.layoutControl1;
-            this.simpleButton2.TabIndex = 5;
-            this.simpleButton2.Text = "simpleButton2";
-            // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.simpleButton2;
+            this.layoutControlItem2.Control = this.btnInformeDeInventario;
             this.layoutControlItem2.Location = new System.Drawing.Point(254, 0);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(0, 100);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(78, 100);
@@ -116,15 +135,6 @@
             this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Location = new System.Drawing.Point(521, 12);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(250, 96);
-            this.simpleButton3.StyleController = this.layoutControl1;
-            this.simpleButton3.TabIndex = 6;
-            this.simpleButton3.Text = "simpleButton3";
             // 
             // layoutControlItem3
             // 
@@ -137,15 +147,6 @@
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(775, 12);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(251, 96);
-            this.simpleButton4.StyleController = this.layoutControl1;
-            this.simpleButton4.TabIndex = 7;
-            this.simpleButton4.Text = "simpleButton4";
             // 
             // layoutControlItem4
             // 
@@ -184,7 +185,7 @@
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraEditors.SimpleButton btnVentasPorFechas;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnInformeDeInventario;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;

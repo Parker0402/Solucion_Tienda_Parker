@@ -163,6 +163,7 @@ namespace Tienda_Parker
             this.btnInicio.Size = new System.Drawing.Size(125, 66);
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "Inicio";
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // panelControl2
             // 
