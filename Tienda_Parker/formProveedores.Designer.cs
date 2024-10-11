@@ -313,7 +313,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formProveedores";
-            this.Text = "formProveedores";
+            this.Text = "Proveedores";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.formProveedores_Load);
             this.panel1.ResumeLayout(false);

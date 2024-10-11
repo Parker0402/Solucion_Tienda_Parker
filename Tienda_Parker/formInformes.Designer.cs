@@ -166,7 +166,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 570);
             this.Controls.Add(this.layoutControl1);
-            this.IsMdiContainer = true;
             this.Name = "formInformes";
             this.Text = "Informes";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

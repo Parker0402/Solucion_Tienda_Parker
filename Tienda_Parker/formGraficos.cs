@@ -88,7 +88,7 @@ namespace Tienda_Parker
             foreach (var venta in ventasPorUsuario)
             {
                 // El argumento será el mes y año en formato simple (ejemplo: "09-2024")
-                string argumento = $"{venta.Mes:D2}-{venta.Año}";  // Formato MM-YYYY
+                string argumento = $"{venta.Usuario.Usuario}-{venta.Mes}";  // Formato MM-YYYY
                                                                    // Agregar el punto con el argumento y el total de ventas
                 seriesVentas.Points.Add(new SeriesPoint(argumento, venta.TotalVentas));
             }
