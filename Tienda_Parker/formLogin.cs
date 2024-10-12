@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Web.Security;
 using System.Windows.Forms;
 using Tienda_Parker.Database;
+using Tienda_Parker.Utils;
 
 namespace Tienda_Parker
 {
@@ -27,12 +28,17 @@ namespace Tienda_Parker
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             bool usr = false;
+
+            // Encriptar la contraseña ingresada por el usuario
+            string contrasenaIngresadaEncriptada = PasswordHelper.EncriptarContraseña(txtContrasena.Text);
+
             foreach (Usuarios U in xpCollectionUsuario)
             {
+                // Comparar el usuario y la contraseña encriptada
                 if (U.Usuario.Equals(txtUsuario.Text) &&
-                U.Contrasena.Equals(txtContrasena.Text))
+                    U.Contrasena.Equals(contrasenaIngresadaEncriptada)) // Contraseña encriptada
                 {
-                    formPrincipal fp = new formPrincipal(U.Roles,U);
+                    formPrincipal fp = new formPrincipal(U.Roles, U);
                     this.Visible = false;
                     fp.ShowDialog();
                     this.Visible = true;
@@ -43,6 +49,7 @@ namespace Tienda_Parker
                     usr = true;
                 }
             }
+
             if (!usr)
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -50,7 +57,7 @@ namespace Tienda_Parker
                 txtUsuario.Clear();
                 txtUsuario.Focus();
             }
-        
+
         }
     }
 }

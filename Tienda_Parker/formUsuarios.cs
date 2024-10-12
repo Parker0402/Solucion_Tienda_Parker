@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_Parker.Database;
+using Tienda_Parker.Utils;
 
 namespace Tienda_Parker
 {
@@ -42,24 +43,51 @@ namespace Tienda_Parker
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtUser.Text) || string.IsNullOrEmpty(txtPass.Text)|| string.IsNullOrEmpty(cmbRol.Text))
+            //if(string.IsNullOrEmpty(txtUser.Text) || string.IsNullOrEmpty(txtPass.Text)|| string.IsNullOrEmpty(cmbRol.Text))
+            //{
+            //    MessageBox.Show("Campos Requeridos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+
+            //Usuarios Nuevo = new Usuarios(unitOfWork1);
+            //Nuevo.Usuario = txtUser.Text;
+            //Nuevo.Contrasena = txtPass.Text;
+            //Nuevo.Roles=cmbRol.Text;
+
+            //Nuevo.Save();
+            //unitOfWork1.CommitChanges();
+
+            //MessageBox.Show("Guardado con Exito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //xpCollectionUsuario.Reload();
+            //Permisos(true,false,false,false,false,false);
+            //Limpiar();
+            // Verificar si los campos requeridos están vacíos
+            if (string.IsNullOrEmpty(txtUser.Text) || string.IsNullOrEmpty(txtPass.Text) || string.IsNullOrEmpty(cmbRol.Text))
             {
                 MessageBox.Show("Campos Requeridos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            // Crear una nueva instancia de usuario
             Usuarios Nuevo = new Usuarios(unitOfWork1);
             Nuevo.Usuario = txtUser.Text;
-            Nuevo.Contrasena = txtPass.Text;
-            Nuevo.Roles=cmbRol.Text;
 
+            // Encriptar la contraseña antes de guardarla
+            Nuevo.Contrasena = PasswordHelper.EncriptarContraseña(txtPass.Text);
+
+            // Asignar el rol
+            Nuevo.Roles = cmbRol.Text;
+
+            // Guardar el nuevo usuario
             Nuevo.Save();
             unitOfWork1.CommitChanges();
 
-            MessageBox.Show("Guardado con Exito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Guardado con Éxito", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Recargar la colección de usuarios y limpiar la interfaz
             xpCollectionUsuario.Reload();
-            Permisos(true,false,false,false,false,false);
+            Permisos(true, false, false, false, false, false);
             Limpiar();
         }
 
@@ -161,7 +189,10 @@ namespace Tienda_Parker
                 {
                     // Actualizar los valores del usuario con los valores de los controles
                     usuarioAActualizar.Usuario = txtUser.Text;
-                    usuarioAActualizar.Contrasena = txtPass.Text;
+
+                    // Encriptar la contraseña antes de actualizarla
+                    usuarioAActualizar.Contrasena = PasswordHelper.EncriptarContraseña(txtPass.Text);
+
                     usuarioAActualizar.Roles = cmbRol.Text;
 
                     // Guardar los cambios en la base de datos
@@ -177,11 +208,10 @@ namespace Tienda_Parker
                     // Limpiar los campos
                     Limpiar();
                     Permisos(true, false, false, false, false, false);
-
                 }
                 else
                 {
-                    MessageBox.Show("No encontrado", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario no encontrado", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -190,6 +220,7 @@ namespace Tienda_Parker
                 MessageBox.Show("Por favor, selecciona un registro para actualizar", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {

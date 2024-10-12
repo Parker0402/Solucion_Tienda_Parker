@@ -213,7 +213,7 @@ namespace Tienda_Parker
 
                 // Comando para realizar el respaldo
                 string mysqldumpPath = @"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe"; // Ruta al ejecutable de mysqldump
-                string arguments = $"-u {userId} -p{password} --result-file=\"{backupFilePath}\" {databaseName}";
+                string arguments = $"-u {userId} -p{password} --triggers --result-file=\"{backupFilePath}\" {databaseName}";
 
                 // Iniciar el proceso
                 try
