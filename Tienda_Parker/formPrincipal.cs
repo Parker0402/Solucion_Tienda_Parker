@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tienda_Parker.Database;
+using Tienda_Parker.Informes;
 
 namespace Tienda_Parker
 {
@@ -22,6 +23,7 @@ namespace Tienda_Parker
             InitializeComponent();
             this.rol = rol;
             this.us=usuarios;
+            ConfigurarAccesosPorRol(rol);
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -172,34 +174,22 @@ namespace Tienda_Parker
             }
 
         }
-        private void btnInformes_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Busca si el formulario ya está abierto
-                var formularioExistente = this.MdiChildren.OfType<formInformes>().FirstOrDefault();
-
-                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
-                if (formularioExistente == null)
-                {
-                    var nuevoFormulario = new formInformes { MdiParent = this };
-                    nuevoFormulario.Show();
-                }
-                else
-                {
-                    formularioExistente.BringToFront();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
-            }
-
-        }
 
         private void formPrincipal_Load(object sender, EventArgs e)
         {
+            // Busca si el formulario ya está abierto
+            var formularioExistente = this.MdiChildren.OfType<formGraficos>().FirstOrDefault();
 
+            // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+            if (formularioExistente == null)
+            {
+                var nuevoFormulario = new formGraficos { MdiParent = this };
+                nuevoFormulario.Show();
+            }
+            else
+            {
+                formularioExistente.BringToFront();
+            }
         }
 
         private void btnRespaldo_Click(object sender, EventArgs e)
@@ -335,7 +325,8 @@ namespace Tienda_Parker
                     btnEntradaInventario.Enabled = true; // Entradas de inventario
                     btnRespaldo.Enabled = true; // Respaldos
                     btnRestaurar.Enabled = true; // Restaurar
-                    btnInformes.Enabled = true; // Acceso a informes
+                    menuStripInformes.Enabled = true; // Acceso a informes
+                    btnInicio.Enabled = true;
                     break;
 
                 case "Vendedor":
@@ -348,7 +339,8 @@ namespace Tienda_Parker
                     btnEntradaInventario.Enabled = false; // Sin acceso a inventario
                     btnRespaldo.Enabled = false; // Sin acceso a respaldo
                     btnRestaurar.Enabled = false; // Sin acceso a restaurar
-                    btnInformes.Enabled = true; // Puede ver informes
+                    menuStripInformes.Enabled = true; // Puede ver informes
+                    btnInicio.Enabled = false;
                     break;
 
                 case "Consulta":
@@ -361,7 +353,8 @@ namespace Tienda_Parker
                     btnEntradaInventario.Enabled = false; // Sin acceso a inventario
                     btnRespaldo.Enabled = false; // Sin acceso a respaldo
                     btnRestaurar.Enabled = false; // Sin acceso a restaurar
-                    btnInformes.Enabled = true; // Puede ver informes
+                    menuStripInformes.Enabled = true; // Puede ver informes
+                    btnInicio.Enabled = false;
                     break;
 
                 default:
@@ -376,6 +369,7 @@ namespace Tienda_Parker
         private void DeshabilitarTodo()
         {
             // Deshabilita todos los botones
+            menuStripInformes.Enabled= false;
             btnUsuarios.Enabled = false;
             btnEmpleados.Enabled = false;
             btnProductos.Enabled = false;
@@ -384,7 +378,176 @@ namespace Tienda_Parker
             btnEntradaInventario.Enabled = false;
             btnRespaldo.Enabled = false;
             btnRestaurar.Enabled = false;
+            btnInicio.Enabled=false;
         }
 
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<formGraficos>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new formGraficos { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
+
+
+        private void ventasPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<InformeVentasPorRangoDeFechas>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new InformeVentasPorRangoDeFechas { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
+
+        private void maestroDetalleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<INFORMEMAESTRODETALLE>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new INFORMEMAESTRODETALLE { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
+
+        private void ventasPorEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<formInformeVentasPorEmpleado>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new formInformeVentasPorEmpleado { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
+
+        private void informeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<InformeInventario>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new InformeInventario { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
+
+        private void productoMasVendidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<Productosmasvendidos>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new Productosmasvendidos { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
+
+        private void informeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<InformeProveedor>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new InformeProveedor { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
     }
 }

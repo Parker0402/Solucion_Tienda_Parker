@@ -42,5 +42,29 @@ namespace Tienda_Parker
             }
 
         }
+
+        private void btnInformeDeInventario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Busca si el formulario ya está abierto
+                var formularioExistente = this.MdiChildren.OfType<Informes.InformeInventario>().FirstOrDefault();
+
+                // Si el formulario no está abierto, crea una nueva instancia, de lo contrario, lo trae al frente
+                if (formularioExistente == null)
+                {
+                    var nuevoFormulario = new Informes.InformeInventario { MdiParent = this };
+                    nuevoFormulario.Show();
+                }
+                else
+                {
+                    formularioExistente.BringToFront();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir el formulario: {ex.Message}");
+            }
+        }
     }
 }

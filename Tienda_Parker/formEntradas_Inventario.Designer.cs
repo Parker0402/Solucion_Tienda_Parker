@@ -337,7 +337,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formEntradas_Inventario";
-            this.Text = "Entradas_Inventario";
+            this.Text = "Entradas de Inventario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.formEntradas_Inventario_Load);
             this.panel1.ResumeLayout(false);
