@@ -109,9 +109,10 @@ INSERT INTO `proveedores` VALUES (1,'Distribuidora Central','Juan Ramirez','cent
 (2,'Alimentos Global','Maria Lopez','alimentos@example.com','555-5678','Calle Principal 456'),
 (3,'Bebidas del Norte','Pedro Sanchez','bebidas@example.com','555-9012','Av. Norte 789');
 
-INSERT INTO `usuarios` VALUES (1,'admin','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Administrador'),
-(2,'vendedor','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Consulta'),
-(3,'Consulta','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Vendedor');
+INSERT INTO `usuarios` (usuario,contrasena,roles) VALUES 
+('admin','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Administrador'),
+('vendedor','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Consulta'),
+('Consulta','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Vendedor');
 
 DELIMITER ;;
 

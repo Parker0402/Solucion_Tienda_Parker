@@ -24,7 +24,7 @@ namespace Tienda_Parker
             InitializeComponent();
             this.us = usuarios;
             detallesFactura = new List<Detalle_facturas>(); // Inicializa la lista aquí
-
+            gridControl1.DataSource = null;
         }
 
         private void Habilitar(bool nuevo, bool guardar,bool agregar,bool eliminar, bool cancelar, bool campos)
