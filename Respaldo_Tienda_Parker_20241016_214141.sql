@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `tienda` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `tienda`;
 -- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
 --
 -- Host: localhost    Database: tienda
@@ -7,7 +9,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -34,7 +36,7 @@ CREATE TABLE `detalle_facturas` (
   KEY `detalle_facturas_ibfk_2` (`producto_id`),
   CONSTRAINT `detalle_facturas_ibfk_1` FOREIGN KEY (`factura_id`) REFERENCES `facturas` (`id`),
   CONSTRAINT `detalle_facturas_ibfk_2` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +45,7 @@ CREATE TABLE `detalle_facturas` (
 
 LOCK TABLES `detalle_facturas` WRITE;
 /*!40000 ALTER TABLE `detalle_facturas` DISABLE KEYS */;
-INSERT INTO `detalle_facturas` VALUES (10,3,1,32,0.50,16.00),(11,3,1,1,0.50,0.50),(12,4,10,23,11.55,265.65),(13,4,9,23,1.80,41.40),(14,5,12,10,18.00,180.00);
+INSERT INTO `detalle_facturas` VALUES (10,3,1,32,0.50,16.00),(11,3,1,1,0.50,0.50),(12,4,10,23,11.55,265.65),(13,4,9,23,1.80,41.40),(14,5,12,10,18.00,180.00),(15,6,12,23,36.00,828.00);
 /*!40000 ALTER TABLE `detalle_facturas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -93,14 +95,14 @@ CREATE TABLE `entradas_inventario` (
   `producto_id` int DEFAULT NULL,
   `proveedor_id` int DEFAULT NULL,
   `cantidad` int DEFAULT NULL,
-  `precio_compra` decimal(10,2) DEFAULT NULL,
   `creado_en` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `precio_compra` decimal(28,8) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `producto_id` (`producto_id`),
   KEY `proveedor_id` (`proveedor_id`),
   CONSTRAINT `entradas_inventario_ibfk_1` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`),
   CONSTRAINT `entradas_inventario_ibfk_2` FOREIGN KEY (`proveedor_id`) REFERENCES `proveedores` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,9 +111,29 @@ CREATE TABLE `entradas_inventario` (
 
 LOCK TABLES `entradas_inventario` WRITE;
 /*!40000 ALTER TABLE `entradas_inventario` DISABLE KEYS */;
-INSERT INTO `entradas_inventario` VALUES (1,1,1,50,0.40,'2024-09-17 18:27:25'),(2,2,2,30,1.00,'2024-09-17 18:27:25'),(3,3,3,60,1.20,'2024-09-17 18:27:25'),(4,4,2,40,0.60,'2024-09-17 18:27:25'),(5,5,3,100,0.70,'2024-09-17 18:27:25'),(7,10,1,5,10.50,'2024-10-07 02:16:04'),(8,10,2,10,20.00,'2024-10-07 02:24:23'),(9,12,1,8,20.00,'2024-10-17 03:39:56');
+INSERT INTO `entradas_inventario` VALUES (1,1,1,50,'2024-09-17 18:27:25',NULL),(2,2,2,30,'2024-09-17 18:27:25',NULL),(3,3,3,60,'2024-09-17 18:27:25',NULL),(4,4,2,40,'2024-09-17 18:27:25',NULL),(5,5,3,100,'2024-09-17 18:27:25',NULL),(7,10,1,5,'2024-10-07 02:16:04',NULL),(8,10,2,10,'2024-10-07 02:24:23',NULL),(9,12,1,8,'2024-10-17 03:39:56',NULL),(10,12,3,20,'2024-10-28 22:46:12',NULL),(11,12,3,20,'2024-10-28 22:50:54',NULL),(12,12,3,20,'2024-10-28 22:54:07',NULL),(13,10,2,15,'2024-10-28 22:55:19',0.00000000);
 /*!40000 ALTER TABLE `entradas_inventario` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `entradas_inventario_AFTER_INSERT` AFTER INSERT ON `entradas_inventario` FOR EACH ROW BEGIN
+    -- Aumenta la cantidad en la tabla productos sumando la cantidad de la entrada de inventario
+    UPDATE productos
+    SET cantidad = cantidad + NEW.cantidad
+    WHERE id = NEW.producto_id;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `facturas`
@@ -130,7 +152,7 @@ CREATE TABLE `facturas` (
   PRIMARY KEY (`id`),
   KEY `usuario_id` (`usuario_id`),
   CONSTRAINT `facturas_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,7 +161,7 @@ CREATE TABLE `facturas` (
 
 LOCK TABLES `facturas` WRITE;
 /*!40000 ALTER TABLE `facturas` DISABLE KEYS */;
-INSERT INTO `facturas` VALUES (3,'C/F',4,16.50,'2024-10-07 04:58:49','2024-10-06'),(4,'C/F',4,307.05,'2024-10-12 20:36:40','2024-10-12'),(5,'C/F',4,180.00,'2024-10-17 03:40:32','2024-10-16');
+INSERT INTO `facturas` VALUES (3,'C/F',4,16.50,'2024-10-07 04:58:49','2024-10-06'),(4,'C/F',4,307.05,'2024-10-12 20:36:40','2024-10-12'),(5,'C/F',4,180.00,'2024-10-17 03:40:32','2024-10-16'),(6,'C/F',4,828.00,'2024-10-28 23:08:06','2024-10-28');
 /*!40000 ALTER TABLE `facturas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -199,7 +221,7 @@ CREATE TABLE `historial_ventas` (
   KEY `usuario_id` (`usuario_id`),
   CONSTRAINT `historial_ventas_ibfk_1` FOREIGN KEY (`factura_id`) REFERENCES `facturas` (`id`),
   CONSTRAINT `historial_ventas_ibfk_2` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -208,7 +230,7 @@ CREATE TABLE `historial_ventas` (
 
 LOCK TABLES `historial_ventas` WRITE;
 /*!40000 ALTER TABLE `historial_ventas` DISABLE KEYS */;
-INSERT INTO `historial_ventas` VALUES (3,4,'C/F',4,307.05,'2024-10-12 20:36:40','2024-10-12'),(4,5,'C/F',4,180.00,'2024-10-17 03:40:32','2024-10-16');
+INSERT INTO `historial_ventas` VALUES (3,4,'C/F',4,307.05,'2024-10-12 20:36:40','2024-10-12'),(4,5,'C/F',4,180.00,'2024-10-17 03:40:32','2024-10-16'),(5,6,'C/F',4,828.00,'2024-10-28 23:08:06','2024-10-28');
 /*!40000 ALTER TABLE `historial_ventas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -223,10 +245,12 @@ CREATE TABLE `productos` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) DEFAULT NULL,
   `descripcion` text,
-  `precio` decimal(10,2) DEFAULT NULL,
+  `precio_compra` decimal(10,2) DEFAULT NULL,
+  `precio_venta` decimal(10,2) DEFAULT NULL,
   `cantidad` int DEFAULT NULL,
   `creado_en` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `actualizado_en` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `precio` decimal(28,8) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -237,7 +261,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Agua Embotellada','Agua purificada 500ml',0.50,100,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(2,'Papas Fritas','Bolsa de papas fritas sabor original',1.20,50,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(3,'Cerveza','Botella de cerveza de 355ml',1.50,80,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(4,'Galletas','Paquete de galletas de chocolate',0.75,60,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(5,'Refresco en Lata','Lata de refresco de 355ml',0.90,120,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(6,'Chocolate','Barra de chocolate con almendras',1.10,40,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(7,'Detergente en Polvo','Bolsa de detergente de 1kg',3.50,30,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(8,'Papel Higiénico','Paquete de 4 rollos de papel higiénico',2.20,25,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(9,'Jugo Natural','Botella de jugo de naranja 1L',1.80,70,'2024-09-17 18:27:25','2024-09-17 18:27:25'),(10,'Leche','Litro de leche entera',11.55,20,'2024-09-17 18:27:25','2024-10-07 02:29:44'),(12,'Seltzer','Bebida',18.00,20,'2024-10-17 03:39:25','2024-10-17 03:39:56');
+INSERT INTO `productos` VALUES (1,'Agua Embotellada','Agua purificada 500ml',0.50,2.50,100,'2024-09-17 18:27:25','2024-10-28 22:44:14',0.00000000),(2,'Papas Fritas','Bolsa de papas fritas sabor original',1.20,34.40,50,'2024-09-17 18:27:25','2024-10-28 22:43:46',0.00000000),(3,'Cerveza','Botella de cerveza de 355ml',1.50,3.00,80,'2024-09-17 18:27:25','2024-10-28 22:44:19',0.00000000),(4,'Galletas','Paquete de galletas de chocolate',0.75,4.00,60,'2024-09-17 18:27:25','2024-10-28 22:44:28',0.00000000),(5,'Refresco en Lata','Lata de refresco de 355ml',0.90,2.80,120,'2024-09-17 18:27:25','2024-10-28 22:44:35',0.00000000),(6,'Chocolate','Barra de chocolate con almendras',1.10,2.00,40,'2024-09-17 18:27:25','2024-10-28 22:44:48',0.00000000),(7,'Detergente en Polvo','Bolsa de detergente de 1kg',3.50,7.00,30,'2024-09-17 18:27:25','2024-10-28 22:44:53',0.00000000),(8,'Papel Higiénico','Paquete de 4 rollos de papel higiénico',2.20,4.40,25,'2024-09-17 18:27:25','2024-10-28 22:44:59',0.00000000),(9,'Jugo Natural','Botella de jugo de naranja 1L',1.80,3.60,70,'2024-09-17 18:27:25','2024-10-28 22:45:05',0.00000000),(10,'Leche','Litro de leche entera',11.55,23.00,35,'2024-09-17 18:27:25','2024-10-28 22:55:19',0.00000000),(12,'Seltzer','Bebida',18.00,36.00,40,'2024-10-17 03:39:25','2024-10-28 22:54:07',0.00000000);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -297,6 +321,14 @@ LOCK TABLES `usuarios` WRITE;
 INSERT INTO `usuarios` VALUES (1,'Juan Hernandez','ed08c290d7e22f7bb324b15cbadce35b0b348564fd2d5f95752388d86d71bcca','Administrador','2024-09-17 18:27:25','2024-10-12 02:06:38'),(2,'Ana Gomez','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Consulta','2024-09-17 18:27:25','2024-10-12 02:02:35'),(3,'Carlos Juarez','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Vendedor','2024-09-17 18:27:25','2024-10-12 02:02:35'),(4,'admin','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Administrador','2024-09-19 23:26:53','2024-10-12 02:02:35'),(9,'consulta','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Consulta','2024-09-20 19:25:13','2024-10-12 02:02:35'),(10,'vendedor','a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3','Vendedor','2024-10-11 18:17:50','2024-10-12 02:02:35');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'tienda'
+--
+
+--
+-- Dumping routines for database 'tienda'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -307,4 +339,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-16 21:41:46
+-- Dump completed on 2024-10-28 17:10:52

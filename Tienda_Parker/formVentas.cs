@@ -206,7 +206,7 @@ namespace Tienda_Parker
             if (p != null)
             {
                 // Asigna el precio del producto al TextBox, formateando a dos decimales
-                txtPrecioUnitario.Text = p.Precio.ToString("F2");
+                txtPrecioUnitario.Text = p.Precio_venta.ToString("F2");
             }
             else
             {

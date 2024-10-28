@@ -50,11 +50,6 @@
             this.btnEliminarProducto = new DevExpress.XtraEditors.SimpleButton();
             this.cmbProducto = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchViewProductos = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colId1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrecio = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCantidad1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -82,6 +77,13 @@
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.colId1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNombre = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrecio = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCantidad1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrecio_compra = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrecio_venta = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionDetalleFactura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).BeginInit();
@@ -296,42 +298,13 @@
             this.colNombre,
             this.colDescripcion,
             this.colPrecio,
-            this.colCantidad1});
+            this.colCantidad1,
+            this.colPrecio_compra,
+            this.colPrecio_venta});
             this.searchViewProductos.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchViewProductos.Name = "searchViewProductos";
             this.searchViewProductos.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchViewProductos.OptionsView.ShowGroupPanel = false;
-            // 
-            // colId1
-            // 
-            this.colId1.FieldName = "Id";
-            this.colId1.Name = "colId1";
-            // 
-            // colNombre
-            // 
-            this.colNombre.FieldName = "Nombre";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Visible = true;
-            this.colNombre.VisibleIndex = 0;
-            // 
-            // colDescripcion
-            // 
-            this.colDescripcion.FieldName = "Descripcion";
-            this.colDescripcion.Name = "colDescripcion";
-            // 
-            // colPrecio
-            // 
-            this.colPrecio.FieldName = "Precio";
-            this.colPrecio.Name = "colPrecio";
-            this.colPrecio.Visible = true;
-            this.colPrecio.VisibleIndex = 1;
-            // 
-            // colCantidad1
-            // 
-            this.colCantidad1.FieldName = "Cantidad";
-            this.colCantidad1.Name = "colCantidad1";
-            this.colCantidad1.Visible = true;
-            this.colCantidad1.VisibleIndex = 2;
             // 
             // Root
             // 
@@ -608,6 +581,49 @@
             this.emptySpaceItem5.Size = new System.Drawing.Size(222, 54);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // colId1
+            // 
+            this.colId1.FieldName = "Id";
+            this.colId1.Name = "colId1";
+            // 
+            // colNombre
+            // 
+            this.colNombre.FieldName = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Visible = true;
+            this.colNombre.VisibleIndex = 0;
+            // 
+            // colDescripcion
+            // 
+            this.colDescripcion.FieldName = "Descripcion";
+            this.colDescripcion.Name = "colDescripcion";
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.FieldName = "Precio";
+            this.colPrecio.Name = "colPrecio";
+            // 
+            // colCantidad1
+            // 
+            this.colCantidad1.FieldName = "Cantidad";
+            this.colCantidad1.Name = "colCantidad1";
+            this.colCantidad1.Visible = true;
+            this.colCantidad1.VisibleIndex = 1;
+            // 
+            // colPrecio_compra
+            // 
+            this.colPrecio_compra.FieldName = "Precio_compra";
+            this.colPrecio_compra.Name = "colPrecio_compra";
+            this.colPrecio_compra.Visible = true;
+            this.colPrecio_compra.VisibleIndex = 2;
+            // 
+            // colPrecio_venta
+            // 
+            this.colPrecio_venta.FieldName = "Precio_venta";
+            this.colPrecio_venta.Name = "colPrecio_venta";
+            this.colPrecio_venta.Visible = true;
+            this.colPrecio_venta.VisibleIndex = 3;
+            // 
             // formVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -710,12 +726,14 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
         private DevExpress.XtraEditors.SearchLookUpEdit cmbProducto;
         private DevExpress.XtraGrid.Views.Grid.GridView searchViewProductos;
+        private DevExpress.XtraEditors.LookUpEdit cmbUsuario;
+        private DevExpress.Xpo.XPCollection xpCollectionUsuarios;
         private DevExpress.XtraGrid.Columns.GridColumn colId1;
         private DevExpress.XtraGrid.Columns.GridColumn colNombre;
         private DevExpress.XtraGrid.Columns.GridColumn colDescripcion;
         private DevExpress.XtraGrid.Columns.GridColumn colPrecio;
         private DevExpress.XtraGrid.Columns.GridColumn colCantidad1;
-        private DevExpress.XtraEditors.LookUpEdit cmbUsuario;
-        private DevExpress.Xpo.XPCollection xpCollectionUsuarios;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrecio_compra;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrecio_venta;
     }
 }
