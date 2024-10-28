@@ -126,7 +126,7 @@
   <data name="miBackground.Caption" xml:space="preserve">
     <value>&amp;Fondo</value>
   </data>
-  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="documentViewerBarManager1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyNC4xLCBWZXJzaW9uPTI0LjEu

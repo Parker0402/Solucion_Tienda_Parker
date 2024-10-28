@@ -43,6 +43,10 @@
             this.searchProducto = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.xpCollectionProducto = new DevExpress.Xpo.XPCollection(this.components);
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+<<<<<<< HEAD
+=======
+            this.label4 = new System.Windows.Forms.Label();
+>>>>>>> main
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,6 +83,10 @@
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(this.searchProveedor);
             this.panel1.Controls.Add(this.searchProducto);
+<<<<<<< HEAD
+=======
+            this.panel1.Controls.Add(this.label4);
+>>>>>>> main
             this.panel1.Controls.Add(this.txtCantidad);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -196,6 +204,17 @@
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
+<<<<<<< HEAD
+=======
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 7;
+            // 
+>>>>>>> main
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(48, 126);
@@ -340,6 +359,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Label label4;
+>>>>>>> main
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
