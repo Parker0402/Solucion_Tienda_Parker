@@ -43,8 +43,6 @@
             this.searchProducto = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.xpCollectionProducto = new DevExpress.Xpo.XPCollection(this.components);
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,8 +79,6 @@
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(this.searchProveedor);
             this.panel1.Controls.Add(this.searchProducto);
-            this.panel1.Controls.Add(this.txtPrecioCompra);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtCantidad);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -199,22 +195,6 @@
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // txtPrecioCompra
-            // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(36, 185);
-            this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(88, 20);
-            this.txtPrecioCompra.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Precio de Compra";
             // 
             // txtCantidad
             // 
@@ -360,8 +340,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPrecioCompra;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

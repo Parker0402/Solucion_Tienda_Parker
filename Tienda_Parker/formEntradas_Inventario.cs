@@ -29,12 +29,10 @@ namespace Tienda_Parker
             searchProducto.Enabled = campos;
             searchProveedor.Enabled = campos;
             txtCantidad.Enabled = campos;
-            txtPrecioCompra.Enabled = campos;
         }
 
         private void Limpiar()
         {
-            txtPrecioCompra.Clear();
             txtCantidad.Clear();
             txtCantidad.Clear();
             searchProveedor.EditValue =  null;
@@ -57,7 +55,6 @@ namespace Tienda_Parker
         {
             // Validar que todos los campos requeridos estén llenos
             if (string.IsNullOrEmpty(txtCantidad.Text) ||
-                string.IsNullOrEmpty(txtPrecioCompra.Text) ||
                 searchProducto.EditValue == null ||
                 searchProveedor.EditValue == null)
             {
@@ -70,27 +67,10 @@ namespace Tienda_Parker
                 // Crear una nueva entrada en el inventario
                 Entradas_inventario np = new Entradas_inventario(unitOfWork1);
                 np.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                np.Precio_compra = Convert.ToDecimal(txtPrecioCompra.Text);
                 np.Producto_id = unitOfWork1.FindObject<Productos>(CriteriaOperator.Parse("Id = ?", (int)searchProducto.EditValue));
                 np.Proveedor_id = unitOfWork1.FindObject<Proveedores>(CriteriaOperator.Parse("Id = ?", (int)searchProveedor.EditValue));
                 np.Save();
 
-                // Actualizar el producto correspondiente
-                Productos producto = np.Producto_id;  // El producto ya se obtuvo en la línea anterior
-
-                if (producto != null)
-                {
-                    // Actualizar la cantidad en el inventario
-                    producto.Cantidad += np.Cantidad;
-
-                    // Calcular el nuevo precio de venta con un margen de ganancia del 10%
-                    decimal precioConMargen = np.Precio_compra * 1.10m;  // Aplica un 10% de ganancia
-
-                    // Actualizar el precio de venta del producto
-                    precioConMargen = Math.Round(precioConMargen, 2);
-                    // Guardar los cambios del producto
-                    producto.Save();
-                }
 
                 // Confirmar los cambios en la base de datos
                 unitOfWork1.CommitChanges();
@@ -190,7 +170,6 @@ namespace Tienda_Parker
 
                 // Validación de campos vacíos
                 if (string.IsNullOrEmpty(txtCantidad.Text) ||
-                    string.IsNullOrEmpty(txtPrecioCompra.Text) ||
                     searchProducto.EditValue == null ||
                     searchProveedor.EditValue == null)
                 {
@@ -202,13 +181,6 @@ namespace Tienda_Parker
                 if (!int.TryParse(txtCantidad.Text, out int nuevaCantidad) || nuevaCantidad <= 0)
                 {
                     MessageBox.Show("La cantidad debe ser un número entero válido mayor que 0.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                // Validación de tipo de dato (precio de compra)
-                if (!decimal.TryParse(txtPrecioCompra.Text, out decimal precioCompra) || precioCompra <= 0)
-                {
-                    MessageBox.Show("El precio de compra debe ser un valor numérico válido mayor que 0.", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -239,7 +211,6 @@ namespace Tienda_Parker
 
                     // Actualizar los valores de la entrada de inventario
                     Actualizar.Cantidad = nuevaCantidad;
-                    Actualizar.Precio_compra = precioCompra;
 
                     // Validación del producto seleccionado
                     if (int.TryParse(searchProducto.EditValue?.ToString(), out int productoId))
@@ -309,7 +280,6 @@ namespace Tienda_Parker
             {
                 Habilitar(false, false, true, true, true, true);
                 txtCantidad.Text = gridViewEntradaInventario.GetRowCellValue(e.RowHandle, "Cantidad").ToString();
-                txtPrecioCompra.Text = gridViewEntradaInventario.GetRowCellValue(e.RowHandle, "Precio_compra").ToString();
                 searchProducto.EditValue = gridViewEntradaInventario.GetRowCellValue(e.RowHandle, "Producto_id!Key").ToString();
                 searchProveedor.EditValue = gridViewEntradaInventario.GetRowCellValue(e.RowHandle, "Proveedor_id!Key").ToString();
 

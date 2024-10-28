@@ -54,6 +54,8 @@ namespace Tienda_Parker
             this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPrecio = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCantidad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProducto)).BeginInit();
@@ -63,6 +65,8 @@ namespace Tienda_Parker
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnCancelar);
@@ -138,14 +142,14 @@ namespace Tienda_Parker
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(81, 168);
+            this.txtCantidad.Location = new System.Drawing.Point(89, 129);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 8;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(81, 124);
+            this.txtPrecio.Location = new System.Drawing.Point(89, 155);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 7;
@@ -167,7 +171,7 @@ namespace Tienda_Parker
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 175);
+            this.label4.Location = new System.Drawing.Point(12, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 4;
@@ -176,11 +180,11 @@ namespace Tienda_Parker
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 131);
+            this.label3.Location = new System.Drawing.Point(12, 158);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Precio";
+            this.label3.Text = "Precio Compra";
             // 
             // label2
             // 
@@ -263,6 +267,22 @@ namespace Tienda_Parker
             this.colCantidad.Visible = true;
             this.colCantidad.VisibleIndex = 3;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(89, 181);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 46;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 184);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Precio Venta";
+            // 
             // formProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,5 +331,7 @@ namespace Tienda_Parker
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnActualizar;
         private DevExpress.XtraEditors.SimpleButton btnNuevo;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
