@@ -32,13 +32,15 @@ namespace Tienda_Parker
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formProducto));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtPrecioV = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.btnEliminar = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnActualizar = new DevExpress.XtraEditors.SimpleButton();
             this.btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtPrecioC = new System.Windows.Forms.TextBox();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,8 +56,8 @@ namespace Tienda_Parker
             this.colDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPrecio = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCantidad = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.colPrecio_compra = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrecio_venta = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpCollectionProducto)).BeginInit();
@@ -65,7 +67,7 @@ namespace Tienda_Parker
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtPrecioV);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnEliminar);
@@ -73,7 +75,7 @@ namespace Tienda_Parker
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(this.txtCantidad);
-            this.panel1.Controls.Add(this.txtPrecio);
+            this.panel1.Controls.Add(this.txtPrecioC);
             this.panel1.Controls.Add(this.txtDesc);
             this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label4);
@@ -85,6 +87,22 @@ namespace Tienda_Parker
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // txtPrecioV
+            // 
+            this.txtPrecioV.Location = new System.Drawing.Point(89, 181);
+            this.txtPrecioV.Name = "txtPrecioV";
+            this.txtPrecioV.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioV.TabIndex = 46;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 184);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Precio Venta";
             // 
             // btnGuardar
             // 
@@ -142,29 +160,21 @@ namespace Tienda_Parker
             // 
             // txtCantidad
             // 
-<<<<<<< HEAD
             this.txtCantidad.Location = new System.Drawing.Point(89, 129);
-=======
-            this.txtCantidad.Location = new System.Drawing.Point(78, 104);
->>>>>>> main
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 8;
             // 
-            // txtPrecio
+            // txtPrecioC
             // 
-<<<<<<< HEAD
-            this.txtPrecio.Location = new System.Drawing.Point(89, 155);
-=======
-            this.txtPrecio.Location = new System.Drawing.Point(78, 150);
->>>>>>> main
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecio.TabIndex = 7;
+            this.txtPrecioC.Location = new System.Drawing.Point(89, 155);
+            this.txtPrecioC.Name = "txtPrecioC";
+            this.txtPrecioC.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioC.TabIndex = 7;
             // 
             // txtDesc
             // 
-            this.txtDesc.Location = new System.Drawing.Point(78, 61);
+            this.txtDesc.Location = new System.Drawing.Point(81, 78);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(116, 20);
             this.txtDesc.TabIndex = 6;
@@ -179,11 +189,7 @@ namespace Tienda_Parker
             // label4
             // 
             this.label4.AutoSize = true;
-<<<<<<< HEAD
             this.label4.Location = new System.Drawing.Point(12, 132);
-=======
-            this.label4.Location = new System.Drawing.Point(12, 111);
->>>>>>> main
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 4;
@@ -192,11 +198,7 @@ namespace Tienda_Parker
             // label3
             // 
             this.label3.AutoSize = true;
-<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(12, 158);
-=======
-            this.label3.Location = new System.Drawing.Point(12, 157);
->>>>>>> main
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
@@ -205,7 +207,7 @@ namespace Tienda_Parker
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Location = new System.Drawing.Point(12, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 2;
@@ -244,7 +246,9 @@ namespace Tienda_Parker
             this.colNombre,
             this.colDescripcion,
             this.colPrecio,
-            this.colCantidad});
+            this.colCantidad,
+            this.colPrecio_compra,
+            this.colPrecio_venta});
             this.gridViewProducto.GridControl = this.gridControl1;
             this.gridViewProducto.Name = "gridViewProducto";
             this.gridViewProducto.OptionsBehavior.Editable = false;
@@ -273,44 +277,27 @@ namespace Tienda_Parker
             // 
             this.colPrecio.FieldName = "Precio";
             this.colPrecio.Name = "colPrecio";
-            this.colPrecio.Visible = true;
-            this.colPrecio.VisibleIndex = 2;
             // 
             // colCantidad
             // 
             this.colCantidad.FieldName = "Cantidad";
             this.colCantidad.Name = "colCantidad";
             this.colCantidad.Visible = true;
-            this.colCantidad.VisibleIndex = 3;
+            this.colCantidad.VisibleIndex = 2;
             // 
-            // textBox1
+            // colPrecio_compra
             // 
-<<<<<<< HEAD
-            this.textBox1.Location = new System.Drawing.Point(89, 181);
-=======
-            this.textBox1.Location = new System.Drawing.Point(81, 186);
->>>>>>> main
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 46;
+            this.colPrecio_compra.FieldName = "Precio_compra";
+            this.colPrecio_compra.Name = "colPrecio_compra";
+            this.colPrecio_compra.Visible = true;
+            this.colPrecio_compra.VisibleIndex = 3;
             // 
-            // label5
+            // colPrecio_venta
             // 
-            this.label5.AutoSize = true;
-<<<<<<< HEAD
-            this.label5.Location = new System.Drawing.Point(12, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Precio Venta";
-=======
-            this.label5.Location = new System.Drawing.Point(12, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Precio";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
->>>>>>> main
+            this.colPrecio_venta.FieldName = "Precio_venta";
+            this.colPrecio_venta.Name = "colPrecio_venta";
+            this.colPrecio_venta.Visible = true;
+            this.colPrecio_venta.VisibleIndex = 4;
             // 
             // formProducto
             // 
@@ -344,23 +331,25 @@ namespace Tienda_Parker
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtPrecioC;
         private System.Windows.Forms.TextBox txtDesc;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.Xpo.XPCollection xpCollectionProducto;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewProducto;
         private DevExpress.Xpo.UnitOfWork unitOfWork1;
-        private DevExpress.XtraGrid.Columns.GridColumn colId;
-        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
-        private DevExpress.XtraGrid.Columns.GridColumn colDescripcion;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrecio;
-        private DevExpress.XtraGrid.Columns.GridColumn colCantidad;
         private DevExpress.XtraEditors.SimpleButton btnGuardar;
         private DevExpress.XtraEditors.SimpleButton btnEliminar;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnActualizar;
         private DevExpress.XtraEditors.SimpleButton btnNuevo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPrecioV;
         private System.Windows.Forms.Label label5;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private DevExpress.XtraGrid.Columns.GridColumn colNombre;
+        private DevExpress.XtraGrid.Columns.GridColumn colDescripcion;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrecio;
+        private DevExpress.XtraGrid.Columns.GridColumn colCantidad;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrecio_compra;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrecio_venta;
     }
 }

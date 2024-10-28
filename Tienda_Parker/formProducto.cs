@@ -29,7 +29,9 @@ namespace Tienda_Parker
             txtNombre.Enabled = campos;
             txtDesc.Enabled = campos;
             txtCantidad.Enabled = campos;
-            txtPrecio.Enabled = campos;
+            txtPrecioC.Enabled = campos;
+            txtPrecioV.Enabled = campos;
+
         }
 
         private void Limpiar()
@@ -37,7 +39,8 @@ namespace Tienda_Parker
             txtNombre.Clear();
             txtDesc.Clear();
             txtCantidad.Clear();
-            txtPrecio.Clear();
+            txtPrecioC.Clear();
+            txtPrecioV.Clear();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -51,7 +54,8 @@ namespace Tienda_Parker
             if (string.IsNullOrEmpty(txtNombre.Text) ||
                 string.IsNullOrEmpty(txtDesc.Text) ||
                 string.IsNullOrEmpty(txtCantidad.Text) ||
-                string.IsNullOrEmpty(txtPrecio.Text)
+                string.IsNullOrEmpty(txtPrecioC.Text) ||
+                String.IsNullOrEmpty(txtPrecioV.Text)
                 )
             {
                 MessageBox.Show("Campos Requeridos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -62,8 +66,8 @@ namespace Tienda_Parker
             np.Nombre = txtNombre.Text;
             np.Descripcion = txtDesc.Text;
             np.Cantidad = int.Parse(txtCantidad.Text);
-            np.Precio = decimal.Parse(txtPrecio.Text);
-
+            np.Precio_compra = decimal.Parse(txtPrecioC.Text);
+            np.Precio_venta = decimal.Parse(txtPrecioV.Text);
 
             np.Save();
             unitOfWork1.CommitChanges();
@@ -142,7 +146,8 @@ namespace Tienda_Parker
                 if (string.IsNullOrEmpty(txtNombre.Text) ||
                 string.IsNullOrEmpty(txtNombre.Text) ||
                 string.IsNullOrEmpty(txtDesc.Text) ||
-                string.IsNullOrEmpty(txtPrecio.Text) ||
+                string.IsNullOrEmpty(txtPrecioC.Text) ||
+                string.IsNullOrEmpty (txtPrecioV.Text) ||
                 string.IsNullOrEmpty(txtCantidad.Text))
                 {
                     MessageBox.Show("Campos Requeridos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -166,7 +171,8 @@ namespace Tienda_Parker
                     // Actualizar los valores del usuario con los valores de los controles
                     Actualizar.Nombre = txtNombre.Text;
                     Actualizar.Descripcion = txtDesc.Text;
-                    Actualizar.Precio = int.Parse(txtPrecio.Text);
+                    Actualizar.Precio_compra = decimal.Parse(txtPrecioC.Text);
+                    Actualizar.Precio_venta=decimal.Parse(txtPrecioV.Text);
                     Actualizar.Cantidad = int.Parse(txtCantidad.Text);
 
                     // Guardar los cambios en la base de datos
@@ -203,7 +209,8 @@ namespace Tienda_Parker
                 Habilitar(false, false, true, true, true, true);
                 txtNombre.Text = gridViewProducto.GetRowCellValue(e.RowHandle, "Nombre").ToString();
                 txtDesc.Text = gridViewProducto.GetRowCellValue(e.RowHandle, "Descripcion").ToString();
-                txtPrecio.Text = gridViewProducto.GetRowCellValue(e.RowHandle, "Precio").ToString();
+                txtPrecioC.Text = gridViewProducto.GetRowCellValue(e.RowHandle, "Precio_compra").ToString();
+                txtPrecioV.Text = gridViewProducto.GetRowCellValue(e.RowHandle, "Precio_venta").ToString();
                 txtCantidad.Text = gridViewProducto.GetRowCellValue(e.RowHandle, "Cantidad").ToString();
             }
         }

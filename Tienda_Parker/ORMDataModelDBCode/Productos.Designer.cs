@@ -56,6 +56,20 @@ namespace Tienda_Parker.Database
             get { return fCantidad; }
             set { SetPropertyValue<int>(nameof(Cantidad), ref fCantidad, value); }
         }
+        decimal fPrecio_compra;
+        [Persistent(@"precio_compra")]
+        public decimal Precio_compra
+        {
+            get { return fPrecio_compra; }
+            set { SetPropertyValue<decimal>(nameof(Precio_compra), ref fPrecio_compra, value); }
+        }
+        decimal fPrecio_venta;
+        [Persistent(@"precio_venta")]
+        public decimal Precio_venta
+        {
+            get { return fPrecio_venta; }
+            set { SetPropertyValue<decimal>(nameof(Precio_venta), ref fPrecio_venta, value); }
+        }
         [Association(@"Detalle_facturasReferencesProductos")]
         public XPCollection<Detalle_facturas> Detalle_facturass { get { return GetCollection<Detalle_facturas>(nameof(Detalle_facturass)); } }
         [Association(@"Entradas_inventarioReferencesProductos")]
