@@ -219,5 +219,10 @@ namespace Tienda_Parker
         {
             Habilitar(true,false,false,false,false,false);
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

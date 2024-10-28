@@ -147,7 +147,7 @@
     <value>Header And Footer</value>
   </data>
   <data name="&gt;&gt;bbiShowLastPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem18.Caption" xml:space="preserve">
     <value>Text File</value>
@@ -181,10 +181,10 @@
     <value>printPreviewBarCheckItem12</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiShowFirstPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="zoomTrackBarEditItem.EditWidth" type="System.Int32, mscorlib">
     <value>140</value>
@@ -193,7 +193,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem18.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiFind.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -235,7 +235,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem19.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiZoomOut.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -277,7 +277,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem17.Name" xml:space="preserve">
     <value>printPreviewBarCheckItem17</value>
@@ -289,7 +289,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;previewBar2.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
     <value>barDockControlBottom</value>
@@ -301,13 +301,13 @@
     <value>E&amp;xit</value>
   </data>
   <data name="&gt;&gt;bbiClosePreview.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem8.ImageOptions.ImageKey" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;bbiCustomize.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
     <value>$this</value>
@@ -331,7 +331,7 @@
     <value />
   </data>
   <data name="&gt;&gt;printPreviewStaticItemZoomFactor.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem12.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -339,7 +339,7 @@
   <data name="bbiSendFile.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <assembly alias="DevExpress.Utils.v24.1" name="DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="documentViewerBarManager1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v24.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyNC4xLCBWZXJzaW9uPTI0LjEu
@@ -354,7 +354,7 @@
     <value />
   </data>
   <data name="&gt;&gt;bbiPrintDirect.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="documentViewer2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 45</value>
@@ -405,7 +405,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;documentViewer2.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.DocumentViewer, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.DocumentViewer, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem2.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -438,13 +438,13 @@
     <value>bbiZoomOut</value>
   </data>
   <data name="&gt;&gt;repositoryItemProgressBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemProgressBar, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemProgressBar, DevExpress.XtraEditors.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiOpen.Hint" xml:space="preserve">
     <value>Open a document</value>
   </data>
   <data name="&gt;&gt;progressBarEditItem.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.ProgressBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.ProgressBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem11.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -453,7 +453,7 @@
     <value>0, 453</value>
   </data>
   <data name="&gt;&gt;previewBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -465,13 +465,13 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;bbiPageSetup.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiPageSetup.Caption" xml:space="preserve">
     <value>Page Set&amp;up...</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem13.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem5.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -495,7 +495,7 @@
     <value />
   </data>
   <data name="&gt;&gt;bbiHandTool.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiHighlightEditingFields.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -513,7 +513,7 @@
     <value>850, 520</value>
   </data>
   <data name="&gt;&gt;bbiMultiplePages.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem15.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -558,7 +558,7 @@
     <value />
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem18.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -570,7 +570,7 @@
     <value>Search</value>
   </data>
   <data name="&gt;&gt;bbiSendFile.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiZoomIn.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -582,7 +582,7 @@
     <value>P&amp;rint</value>
   </data>
   <data name="&gt;&gt;bbiSave.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiFillBackground.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -615,16 +615,16 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem10.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiPrint.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiPrint.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem16.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -711,7 +711,7 @@
     <value>Combo</value>
   </data>
   <data name="&gt;&gt;bbiEditPageHF.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;miToolbars.Name" xml:space="preserve">
     <value>miToolbars</value>
@@ -720,7 +720,7 @@
     <value>850, 453</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiZoomIn.Hint" xml:space="preserve">
     <value>Zoom In</value>
@@ -729,10 +729,10 @@
     <value />
   </data>
   <data name="&gt;&gt;repositoryItemZoomTrackBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewBarItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="miBackground.Caption" xml:space="preserve">
     <value>&amp;Background</value>
@@ -750,7 +750,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;miPageLayoutFacing.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewStaticItemZoomFactor.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -759,7 +759,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;zoomTrackBarEditItem.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiShowFirstPage.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -774,13 +774,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem9.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem5.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
   </data>
   <data name="&gt;&gt;bbiDocumentMap.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem6.Caption" xml:space="preserve">
     <value>XLS File</value>
@@ -813,7 +813,7 @@
     <value />
   </data>
   <data name="&gt;&gt;bbiMagnifier.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiPrint.ImageOptions.LargeImageKey" xml:space="preserve">
     <value />
@@ -855,7 +855,7 @@
     <value>previewBar3</value>
   </data>
   <data name="&gt;&gt;previewBar3.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiClosePreview.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -918,7 +918,7 @@
     <value>Main Menu</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem14.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiDocumentMap.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -939,7 +939,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;miPageLayout.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiMultiplePages.Name" xml:space="preserve">
     <value>bbiMultiplePages</value>
@@ -963,7 +963,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;miFile.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiMagnifier.Name" xml:space="preserve">
     <value>bbiMagnifier</value>
@@ -1005,7 +1005,7 @@
     <value>bbiDocumentMap</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem16.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiShowLastPage.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -1071,7 +1071,7 @@
     <value>MHT File</value>
   </data>
   <data name="&gt;&gt;bbiOpen.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiShowLastPage.ImageOptions.LargeImageKey" xml:space="preserve">
     <value />
@@ -1092,10 +1092,10 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;printPreviewStaticItemPageOfPages.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiScale.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1107,10 +1107,10 @@
     <value>bbiPrintDirect</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiFind.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="miPageLayout.Caption" xml:space="preserve">
     <value>&amp;Page Layout</value>
@@ -1119,7 +1119,7 @@
     <value />
   </data>
   <data name="&gt;&gt;documentViewer1.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.DocumentViewer, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.DocumentViewer, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;progressBarEditItem.Name" xml:space="preserve">
     <value>progressBarEditItem</value>
@@ -1134,7 +1134,7 @@
     <value>Page Setup</value>
   </data>
   <data name="&gt;&gt;bbiHighlightEditingFields.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiWatermark.Caption" xml:space="preserve">
     <value>&amp;Watermark...</value>
@@ -1152,13 +1152,13 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;bbiExportFile.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem2.Caption" xml:space="preserve">
     <value>HTML File</value>
   </data>
   <data name="&gt;&gt;bbiZoomIn.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiEditPageHF.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1203,7 +1203,7 @@
     <value>DOCX File</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem11.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiEditPageHF.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1236,7 +1236,7 @@
     <value>100%</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="documentViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1287,7 +1287,7 @@
     <value>Hand Tool</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiDocumentMap.Hint" xml:space="preserve">
     <value>Document Map</value>
@@ -1296,7 +1296,7 @@
     <value />
   </data>
   <data name="&gt;&gt;bbiShowNextPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiWatermark.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -1347,13 +1347,13 @@
     <value>Image File</value>
   </data>
   <data name="&gt;&gt;bbiShowPrevPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem12.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiHandTool.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1374,7 +1374,7 @@
     <value />
   </data>
   <data name="&gt;&gt;miToolbars.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarToolbarsListItem, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarToolbarsListItem, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem17.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -1431,7 +1431,7 @@
     <value />
   </data>
   <data name="&gt;&gt;printPreviewRepositoryItemComboBox1.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem13.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1464,7 +1464,7 @@
     <value>bbiFillBackground</value>
   </data>
   <data name="&gt;&gt;bbiFillBackground.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="miFile.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1515,10 +1515,10 @@
     <value>RTF File</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem15.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiHighlightEditingFields.Caption" xml:space="preserve">
     <value>Editing Fields</value>
@@ -1527,7 +1527,7 @@
     <value />
   </data>
   <data name="&gt;&gt;bbiScale.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiSave.ImageOptions.LargeImageKey" xml:space="preserve">
     <value />
@@ -1536,7 +1536,7 @@
     <value />
   </data>
   <data name="&gt;&gt;documentViewerBarManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.DocumentViewerBarManager, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.DocumentViewerBarManager, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
@@ -1563,7 +1563,7 @@
     <value>Last Page</value>
   </data>
   <data name="&gt;&gt;printPreviewBarCheckItem17.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem14.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1611,13 +1611,13 @@
     <value />
   </data>
   <data name="&gt;&gt;bbiZoom.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.ZoomBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.ZoomBarEditItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarCheckItem13.Hint" xml:space="preserve">
     <value>RTF File</value>
   </data>
   <data name="&gt;&gt;miBackground.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="printPreviewBarItem1.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1668,7 +1668,7 @@
     <value>printPreviewStaticItemPageOfPages</value>
   </data>
   <data name="&gt;&gt;bbiThumbnails.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiShowFirstPage.Caption" xml:space="preserve">
     <value>First Page</value>
@@ -1683,7 +1683,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;bbiWatermark.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiFind.Name" xml:space="preserve">
     <value>bbiFind</value>
@@ -1740,7 +1740,7 @@
     <value />
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiWatermark.Hint" xml:space="preserve">
     <value>Watermark</value>
@@ -1794,7 +1794,7 @@
     <value>PDF File</value>
   </data>
   <data name="&gt;&gt;bbiZoomOut.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="miPageLayout.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
     <value>-1</value>
@@ -1803,7 +1803,7 @@
     <value>-1</value>
   </data>
   <data name="&gt;&gt;miPageLayoutContinuous.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiPageSetup.ImageOptions.LargeImageKey" xml:space="preserve">
     <value />
@@ -1815,7 +1815,7 @@
     <value />
   </data>
   <data name="&gt;&gt;miView.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="zoomTrackBarEditItem.ImageOptions.ImageKey" xml:space="preserve">
     <value />
@@ -1848,10 +1848,10 @@
     <value>barDockControlRight</value>
   </data>
   <data name="&gt;&gt;bbiParameters.Type" xml:space="preserve">
-    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="bbiZoomIn.ImageOptions.LargeImageKey" xml:space="preserve">
     <value />
