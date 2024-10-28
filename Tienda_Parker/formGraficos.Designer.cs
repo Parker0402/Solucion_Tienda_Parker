@@ -53,10 +53,10 @@
             // chartControl2
             // 
             this.chartControl2.AutoLayout = false;
-            this.chartControl2.Location = new System.Drawing.Point(12, 431);
+            this.chartControl2.Location = new System.Drawing.Point(12, 380);
             this.chartControl2.Name = "chartControl2";
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl2.Size = new System.Drawing.Size(1125, 416);
+            this.chartControl2.Size = new System.Drawing.Size(1125, 364);
             this.chartControl2.TabIndex = 1;
             // 
             // chartControl1
@@ -64,7 +64,7 @@
             this.chartControl1.Location = new System.Drawing.Point(12, 12);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(1125, 415);
+            this.chartControl1.Size = new System.Drawing.Size(1125, 364);
             this.chartControl1.TabIndex = 0;
             // 
             // layoutControl1
@@ -75,7 +75,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1149, 859);
+            this.layoutControl1.Size = new System.Drawing.Size(1149, 756);
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -87,7 +87,7 @@
             this.layoutControlItem1,
             this.layoutControlItem2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1149, 859);
+            this.Root.Size = new System.Drawing.Size(1149, 756);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -95,16 +95,16 @@
             this.layoutControlItem1.Control = this.chartControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1129, 419);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1129, 368);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.chartControl2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 419);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 368);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1129, 420);
+            this.layoutControlItem2.Size = new System.Drawing.Size(1129, 368);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -122,11 +122,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 859);
+            this.ClientSize = new System.Drawing.Size(1149, 756);
             this.Controls.Add(this.layoutControl1);
             this.Name = "formGraficos";
             this.Text = "Dashboar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.formGraficos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitOfWork1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();

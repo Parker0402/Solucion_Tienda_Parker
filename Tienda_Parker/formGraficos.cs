@@ -110,5 +110,10 @@ namespace Tienda_Parker
 
 
         }
+
+        private void formGraficos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -71,10 +71,6 @@ namespace Tienda_Parker
                 np.Proveedor_id = unitOfWork1.FindObject<Proveedores>(CriteriaOperator.Parse("Id = ?", (int)searchProveedor.EditValue));
                 np.Save();
 
-<<<<<<< HEAD
-=======
-               
->>>>>>> main
 
                 // Confirmar los cambios en la base de datos
                 unitOfWork1.CommitChanges();
@@ -188,11 +184,6 @@ namespace Tienda_Parker
                     return;
                 }
 
-<<<<<<< HEAD
-=======
-           
-
->>>>>>> main
                 // Buscar la entrada de inventario seleccionada usando la misma UnitOfWork (unitOfWork1)
                 Entradas_inventario Actualizar = unitOfWork1.FindObject<Entradas_inventario>(CriteriaOperator.Parse("Id = ?", Seleccionado));
 
