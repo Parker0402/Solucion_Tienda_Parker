@@ -142,14 +142,22 @@ namespace Tienda_Parker
             // 
             // txtCantidad
             // 
+<<<<<<< HEAD
+            this.txtCantidad.Location = new System.Drawing.Point(89, 129);
+=======
             this.txtCantidad.Location = new System.Drawing.Point(78, 104);
+>>>>>>> main
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 8;
             // 
             // txtPrecio
             // 
+<<<<<<< HEAD
+            this.txtPrecio.Location = new System.Drawing.Point(89, 155);
+=======
             this.txtPrecio.Location = new System.Drawing.Point(78, 150);
+>>>>>>> main
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 7;
@@ -171,7 +179,11 @@ namespace Tienda_Parker
             // label4
             // 
             this.label4.AutoSize = true;
+<<<<<<< HEAD
+            this.label4.Location = new System.Drawing.Point(12, 132);
+=======
             this.label4.Location = new System.Drawing.Point(12, 111);
+>>>>>>> main
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 4;
@@ -180,11 +192,15 @@ namespace Tienda_Parker
             // label3
             // 
             this.label3.AutoSize = true;
+<<<<<<< HEAD
+            this.label3.Location = new System.Drawing.Point(12, 158);
+=======
             this.label3.Location = new System.Drawing.Point(12, 157);
+>>>>>>> main
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Precio";
+            this.label3.Text = "Precio Compra";
             // 
             // label2
             // 
@@ -269,7 +285,11 @@ namespace Tienda_Parker
             // 
             // textBox1
             // 
+<<<<<<< HEAD
+            this.textBox1.Location = new System.Drawing.Point(89, 181);
+=======
             this.textBox1.Location = new System.Drawing.Point(81, 186);
+>>>>>>> main
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 46;
@@ -277,12 +297,20 @@ namespace Tienda_Parker
             // label5
             // 
             this.label5.AutoSize = true;
+<<<<<<< HEAD
+            this.label5.Location = new System.Drawing.Point(12, 184);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Precio Venta";
+=======
             this.label5.Location = new System.Drawing.Point(12, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 45;
             this.label5.Text = "Precio";
             this.label5.Click += new System.EventHandler(this.label5_Click);
+>>>>>>> main
             // 
             // formProducto
             // 
